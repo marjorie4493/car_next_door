@@ -3,11 +3,11 @@ class ReservationsController < ApplicationController
 	before_action  :logged_in?
 	
   def index
-    @vehicle = vehicle_by_id(55)  
+    @vehicle = get_drivers_interesting_things
+    @config = get_configuration
   end
 
 	private
-
 		def logged_in?
 			redirect_to root_path unless is_logged_in?
 		end

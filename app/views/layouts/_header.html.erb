@@ -9,11 +9,13 @@
     <a class="navbar-brand" href="#">Car Next Door</a>
   </div>
     <!-- Place everything within .nav-collapse to hide it until above 768px -->
-  <div class="collapse nav-collapse navbar-ex1-collapse">
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
-      <li class="<%= 'active' if current_page?(reservation_path) %>"><%= link_to "Reservations", reservation_path %></li>
-      <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
-		</ul>
+      <% if logged_in? %>
+        <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+        <li class="<%= 'active' if current_page?(reservation_path) %>"><%= link_to "Reservations", reservation_path %></li>
+        <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+		  <% end %>
+    </ul>
   </div><!-- /.nav-collapse -->
 </nav>

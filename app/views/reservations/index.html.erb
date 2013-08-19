@@ -1,6 +1,13 @@
-<h1>You have signed in</h1>
-<%= link_to "Sign out", signout_path, method: "delete" %>
-<%= @vehicle %>
-
+<!-- <h1>You have signed in</h1> -->
+<div class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 col-lg-offset-3">
+      <%=  button_tag "Book my car", class: "btn btn-lg btn-primary btn-block" %><br />
+      <%=  button_tag "Make new reservation", class: "btn btn-lg btn-primary btn-block" %><br />
+      <%=  button_tag "Manage something or other", class: "btn btn-lg btn-primary btn-block" %>
+    </div>
+  </div>
+</div>
 
 
