@@ -6,9 +6,13 @@ CarNextDoor::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'sessions#new'
-  match '/reservation',    to: 'reservations#index',    via: 'get'
-  match '/contact',        to: 'static_pages#contact',  via: 'get'
-  match '/signout',        to: 'sessions#destroy',      via: 'delete'
+  match '/reservation',    		  to: 'reservations#index',    			  via: 'get'
+  match '/profile',        		  to: 'reservations#profile',  			  via: 'get'
+  match '/myCar',          		  to: 'reservations#myCar',    			  via: 'get'
+  match '/manageReservations',    to: 'reservations#manageReservations',  via: 'get'
+  match '/newReservation',        to: 'reservations#newReservation',  	  via: 'get'
+  match '/contact',    			  to: 'static_pages#contact',  			  via: 'get'
+  match '/signout',        		  to: 'sessions#destroy',      			  via: 'delete'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

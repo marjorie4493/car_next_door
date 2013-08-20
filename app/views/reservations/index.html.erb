@@ -3,9 +3,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 col-lg-offset-3">
-      <%=  button_tag "Book my car", class: "btn btn-lg btn-primary btn-block" %><br />
-      <%=  button_tag "Make new reservation", class: "btn btn-lg btn-primary btn-block" %><br />
-      <%=  button_tag "Manage something or other", class: "btn btn-lg btn-primary btn-block" %>
+      <%=  button_to "Book my car", myCar_path, class: "btn btn-lg btn-primary btn-block", method:"get" %><br />
+      <%=  button_to "Make new reservation", newReservation_path, class: "btn btn-lg btn-primary btn-block", method:"get" %><br />
+      <%=  button_to "Manage Reservations", manageReservations_path, class: "btn btn-lg btn-primary btn-block", method:"get" %><br />
+	  <%=  button_to "View Profile", profile_path, class: "btn btn-lg btn-primary btn-block", method: "get" %><br />
+	  <%=  button_to "Contact Us", contact_path, class: "btn btn-lg btn-primary btn-block", method:"get" %>
     </div>
   </div>
 </div>
