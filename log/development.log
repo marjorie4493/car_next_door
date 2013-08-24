@@ -69875,3 +69875,68 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-24 20:53:57 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 2284ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-24 20:54:00 +1000
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (3084.2ms)
+  Rendered layouts/_footer.html.erb (2566.1ms)
+Completed 200 OK in 14673ms (Views: 5965.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-24 20:54:15 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:54:16 +1000

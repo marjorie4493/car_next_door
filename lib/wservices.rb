@@ -259,7 +259,7 @@ module Wservices
       result[:current] = current_reservation
     end
     
-    if !hash["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0].nil?
+    if !hash["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"].nil?
       future = hash["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"]
       future_array = []
       future.each { |x| 
