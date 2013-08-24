@@ -68719,3 +68719,1159 @@ Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-20 20:51:39 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-20 20:51:39 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-21 13:21:58 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1802ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-21 13:22:01 +1000
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (1745.1ms)
+Completed 200 OK in 7576ms (Views: 2097.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:09 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:10 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:10 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:10 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:10 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:10 +1000
+
+
+Started GET "/myCar" for 127.0.0.1 at 2013-08-21 13:22:12 +1000
+Processing by ReservationsController#myCar as HTML
+  Rendered reservations/myCar.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1735.1ms)
+Completed 200 OK in 3545ms (Views: 1779.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:16 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:16 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:16 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:16 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:16 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:16 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:17 +1000
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-21 13:22:21 +1000
+Processing by ReservationsController#index as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1607.1ms)
+Completed 200 OK in 7086ms (Views: 1678.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:28 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:28 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:29 +1000
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-21 13:22:32 +1000
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1750.1ms)
+Completed 200 OK in 3625ms (Views: 1778.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:36 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-21 13:22:37 +1000
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-21 13:22:40 +1000
+Processing by ReservationsController#index as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (4727.3ms)
+Completed 200 OK in 10159ms (Views: 4797.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-21 13:22:50 +1000
+Processing by ReservationsController#index as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1820.1ms)
+Completed 200 OK in 8333ms (Views: 1882.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-22 22:31:40 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1915ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-22 22:31:44 +1000
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (1909.1ms)
+Completed 200 OK in 6991ms (Views: 2925.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 22:31:51 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-22 22:31:51 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-22 22:31:51 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 22:31:51 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-22 22:31:51 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-22 22:31:51 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:51 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 22:31:52 +1000
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-22 22:31:58 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1851.1ms)
+Completed 200 OK in 3739ms (Views: 1906.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:02 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:03 +1000
+
+
+Started GET "/profile" for 127.0.0.1 at 2013-08-22 22:32:05 +1000
+Processing by UsersController#profile as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered users/profile.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1914.1ms)
+Completed 200 OK in 1951ms (Views: 1950.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:07 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:07 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:08 +1000
+
+
+Started GET "/manageReservations" for 127.0.0.1 at 2013-08-22 22:32:12 +1000
+Processing by ReservationsController#manageReservations as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/manageReservations.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1923.1ms)
+Completed 200 OK in 3976ms (Views: 1976.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:16 +1000
+
+
+Started GET "/newreservation" for 127.0.0.1 at 2013-08-22 22:32:20 +1000
+Processing by ReservationsController#new as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1883.1ms)
+Completed 200 OK in 3766ms (Views: 1933.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:24 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:24 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:24 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:24 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:24 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:24 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:25 +1000
+
+
+Started GET "/myCar" for 127.0.0.1 at 2013-08-22 22:32:28 +1000
+Processing by ReservationsController#myCar as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/myCar.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2861.2ms)
+Completed 200 OK in 4833ms (Views: 2902.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:33 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:33 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:33 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:33 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:33 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-22 22:32:33 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 22:32:34 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-22 22:32:57 +1000
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1971ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-22 22:32:59 +1000
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1832.1ms)
+Completed 200 OK in 5730ms (Views: 1877.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 22:33:05 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-22 22:33:05 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 22:33:06 +1000
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-22 22:34:00 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1896.1ms)
+Completed 200 OK in 3779ms (Views: 1925.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2013-08-22 22:34:04 +1000
+Processing by UsersController#profile as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered users/profile.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1838.1ms)
+Completed 200 OK in 1867ms (Views: 1866.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manageReservations" for 127.0.0.1 at 2013-08-22 22:34:06 +1000
+Processing by ReservationsController#manageReservations as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/manageReservations.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1932.1ms)
+Completed 200 OK in 3953ms (Views: 1976.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/newreservation" for 127.0.0.1 at 2013-08-22 22:34:10 +1000
+Processing by ReservationsController#new as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1831.1ms)
+Completed 200 OK in 3743ms (Views: 1903.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/myCar" for 127.0.0.1 at 2013-08-22 22:34:14 +1000
+Processing by ReservationsController#myCar as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/myCar.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1864.1ms)
+Completed 200 OK in 3856ms (Views: 1913.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-24 20:14:07 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1994ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-24 20:14:11 +1000
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (3141.2ms)
+  Rendered layouts/_footer.html.erb (4973.3ms)
+Completed 200 OK in 16931ms (Views: 8561.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-24 20:14:28 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-24 20:14:29 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-24 20:14:29 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-24 20:14:29 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-24 20:14:29 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-24 20:14:29 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:29 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:29 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:29 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:30 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:30 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:30 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:31 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:31 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:31 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:31 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:14:31 +1000
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-24 20:14:46 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2041.1ms)
+  Rendered layouts/_footer.html.erb (1930.1ms)
+Completed 200 OK in 10132ms (Views: 4024.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-24 20:14:57 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1987.1ms)
+  Rendered layouts/_footer.html.erb (7069.4ms)
+Completed 200 OK in 15320ms (Views: 9101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-24 20:15:12 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (2654.2ms)
+  Rendered layouts/_footer.html.erb (1829.1ms)
+Completed 200 OK in 6483ms (Views: 4537.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-24 20:15:19 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (4262.2ms)
+  Rendered layouts/_footer.html.erb (4912.3ms)
+Completed 200 OK in 17230ms (Views: 9255.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-24 20:15:36 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-24 20:15:36 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-24 20:15:36 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-24 20:15:36 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-24 20:15:36 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-24 20:15:36 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:36 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:15:37 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-24 20:17:18 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1906ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-24 20:17:20 +1000
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (4827.3ms)
+  Rendered layouts/_footer.html.erb (1892.1ms)
+Completed 200 OK in 23043ms (Views: 6750.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:17:44 +1000
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-24 20:18:30 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (5990.3ms)
+  Rendered layouts/_footer.html.erb (2814.2ms)
+Completed 200 OK in 17957ms (Views: 8855.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:48 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:49 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:49 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:49 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:49 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:49 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:18:49 +1000
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-24 20:18:52 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (2773.2ms)
+  Rendered layouts/_footer.html.erb (5660.3ms)
+Completed 200 OK in 15160ms (Views: 8479.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:08 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:09 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:09 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:09 +1000
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-08-24 20:19:11 +1000
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2589.1ms)
+  Rendered layouts/_footer.html.erb (1918.1ms)
+Completed 200 OK in 10067ms (Views: 4564.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:21 +1000
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:21 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:21 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:21 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:21 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:21 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:21 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:21 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:22 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-24 20:19:28 +1000
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1838ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-24 20:19:30 +1000
+Processing by ReservationsController#index as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (2901.2ms)
+  Rendered layouts/_footer.html.erb (2834.2ms)
+Completed 200 OK in 11293ms (Views: 5767.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservation" for 127.0.0.1 at 2013-08-24 20:19:41 +1000
+Processing by ReservationsController#index as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1912.1ms)
+  Rendered layouts/_footer.html.erb (2052.1ms)
+Completed 200 OK in 8371ms (Views: 4048.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:50 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:50 +1000
+
+
+Started GET "/assets/index_page.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:50 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:50 +1000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:50 +1000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-24 20:19:50 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:50 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:50 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/assets/index_page.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/assets/collapse.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/assets/transition.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-24 20:19:51 +1000

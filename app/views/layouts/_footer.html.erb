@@ -1,0 +1,12 @@
+<% if logged_in? %>
+  <div class="text-center">
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="navbar-header">&nbsp&nbsp&nbsp&nbsp
+        <%=  link_to "Make", contact_path, method:"get" %> &nbsp&nbsp&nbsp
+        <%=  link_to "Manage", contact_path, method:"get" %>&nbsp&nbsp&nbsp
+        <%=  link_to "Profile", contact_path, method:"get" %>&nbsp&nbsp&nbsp
+        <%=  link_to "Contact Us", contact_path, method:"get" %>&nbsp&nbsp&nbsp 
+      </div>
+    </div>
+  </div>
+<% end %>

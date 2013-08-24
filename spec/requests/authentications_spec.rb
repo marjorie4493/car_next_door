@@ -11,7 +11,7 @@ describe "Authentications" do
         fill_in "session_password", with: "usyd"
         click_button "Login"
       end
-      it { should have_content("You have signed in") }
+      it { should have_link("Book my car") }
     end
 
     describe "with invalid login credentials" do

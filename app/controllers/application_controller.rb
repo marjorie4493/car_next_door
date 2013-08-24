@@ -53,6 +53,7 @@ class ApplicationController < ActionController::Base
 	 		expires: 2.weeks.from_now }
 	end
 
+  # Destroy cookies
 	def sign_out
 		cookies.delete(:username)
 		cookies.delete(:pwd)

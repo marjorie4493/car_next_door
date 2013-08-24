@@ -1807,3 +1807,318 @@ Processing by SessionsController#new as HTML
   Rendered layouts/_header.html.erb (0.1ms)
 Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by ReservationsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:07 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 67ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:09:07 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1869ms (ActiveRecord: 0.0ms)
+Started GET "/reservation" for 127.0.0.1 at 2013-08-22 13:09:09 +1000
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1810.6ms)
+Completed 200 OK in 5826ms (Views: 1816.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:15 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:09:15 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1629ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:16 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:16 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:09:16 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1654ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:18 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:18 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:09:18 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1617ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:20 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:20 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:09:20 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1690ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:21 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:21 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:22 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:22 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:09:22 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ReservationsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:10:51 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 31ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:10:51 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:10:51 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:10:51 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:10:51 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:10:51 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 2039ms (ActiveRecord: 0.0ms)
+Started GET "/reservation" for 127.0.0.1 at 2013-08-22 13:10:53 +1000
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1877.8ms)
+Completed 200 OK in 5762ms (Views: 1884.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:10:59 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:10:59 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1632ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:01 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:01 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:11:01 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1589ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:03 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:03 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:11:03 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1675ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:04 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:04 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:11:04 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1602ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:06 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ReservationsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:48 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:11:48 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1744ms (ActiveRecord: 0.0ms)
+Started GET "/reservation" for 127.0.0.1 at 2013-08-22 13:11:50 +1000
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1734.8ms)
+Completed 200 OK in 5533ms (Views: 1742.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:55 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:11:55 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1586ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:57 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:57 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:11:57 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1583ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:59 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:11:59 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:11:59 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1643ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:12:00 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:12:00 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2013-08-22 13:12:00 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1583ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:12:02 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:12:02 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:12:02 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:12:02 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-08-22 13:12:02 +1000
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction

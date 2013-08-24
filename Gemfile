@@ -48,6 +48,9 @@ gem 'nokogiri'
 
 gem 'paperclip'
 
+# XML parser
+gem 'xml-simple'
+
 # Postgres gem to keep Heroku happy
 gem 'pg'
 
