@@ -14,9 +14,7 @@
 
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      
-        <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path, method: "get" %></li>
-        <li class="<%= 'active' if current_page?(reservation_path) %>"><%= link_to "Reservations", reservation_path, method: "get" %></li>
+		<li><%=  link_to "Contact Us", contact_path, method:"get" %></li> 
         <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
     </ul>
   </div><!-- /.nav-collapse -->
