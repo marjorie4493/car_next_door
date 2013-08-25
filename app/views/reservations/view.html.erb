@@ -3,8 +3,21 @@
     <div class="col-12 col-lg-6 col-lg-offset-3">
       <h2>Reservation Details</h2>
       <%= image_tag @reservation[:image_thumb_url], class:"img-responsive" %>
-      <p><%= @reservation[:id] %><br />
-         <%= @reservation[:driver] %></p> 
+      <p><%= @reservation[:id] %><br /></p>
+
+      <p><b>Name: </b><%= @reservation[:driver] %></p>
+      <p><b>Location: </b><%= @reservation[:location] %></p>
+      <p><b>Cost: </b><%= @reservation[:estimate] %></p> 
+
+	 	<p><b>Cancellation Policy</b></p>
+		<div>Cancellation Fee's, as per below, will be automatically applied if you cancel your booking within 48 hours of the reserved start time, <i>except if</i> within 1 hour of making a booking:</div>
+		</br >
+		<div><b>Cancellation Time: Charges:</b>
+		less than 24hrs before start = 100% of time reserved (up to 12hr max) 24 - 48hrs before start = 50% of time reserved (up to 4hr max) more than 48hrs before start = Nil</div> 
+		</br >
+		<div>
+		* Note, if you cancel your booking and the car is subsequently booked by another member, you will not be charged the cancellation fee for that period.</div>
+         
     </div>
   </div>
 </div>

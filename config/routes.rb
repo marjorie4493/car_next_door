@@ -12,7 +12,7 @@ CarNextDoor::Application.routes.draw do
   match '/profile',        		  to: 'users#profile',  			        via: 'get'
   match '/myCar',          		  to: 'reservations#myCar',    			  via: 'get'
   match '/manageReservations',  to: 'reservations#manageReservations',  via: 'get'
-  match '/newreservation',      to: 'reservations#new',  	          via: 'get'
+  match '/new',                 to: 'reservations#new',  	          via: 'get'
   match '/contact',    			    to: 'static_pages#contact',  			  via: 'get'
   match '/signout',        		  to: 'sessions#destroy',      			  via: 'delete'
 

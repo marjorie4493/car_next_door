@@ -1,12 +1,40 @@
 <% if !cookies[:username].nil? %>
-  <div class="text-center">
+  <div class="text-center"><center>
     <div class="navbar navbar-inverse navbar-fixed-bottom">
       <div class="navbar-header">&nbsp&nbsp&nbsp&nbsp
-	    <%=  link_to "Home", reservation_path, method:"get" %> &nbsp&nbsp&nbsp
-        <%=  link_to "Reserve", newreservation_path, method:"get" %> &nbsp&nbsp&nbsp
-        <%=  link_to "Manage", manageReservations_path, method:"get" %>&nbsp&nbsp&nbsp
-        <%=  link_to "Profile", profile_path, method:"get" %>&nbsp&nbsp&nbsp
+		<table>
+			<tr>
+				<td>
+					<%= image_tag "HomeCarIcon.png", class:"img-responsive" %>
+				</td>
+				<td>
+					<%= image_tag "ReserveCarIcon.png", class:"img-responsive" %>
+				</td>
+				<td>
+					<%= image_tag "ManageCarIcon.png", class:"img-responsive" %>
+				</td>
+				<td>
+					<%= image_tag "ProfileCarIcon.png", class:"img-responsive" %>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<%=  link_to "Home", reservation_path, method:"get" %> &nbsp&nbsp&nbsp
+				</td>
+				<td>
+					<%=  link_to "Reserve", new_path, method:"get" %> &nbsp&nbsp&nbsp
+				</td>
+				<td>
+					<%=  link_to "Manage", manageReservations_path, method:"get" %>&nbsp&nbsp&nbsp
+				</td>
+				<td>
+					<%=  link_to "Profile", profile_path, method:"get" %>&nbsp&nbsp&nbsp
+				</td>
+
+			</tr>
+		</table>
       </div>
     </div>
-  </div>
+  </div></center>
 <% end %>
