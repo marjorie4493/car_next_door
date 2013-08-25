@@ -71080,3 +71080,35 @@ Processing by ReservationsController#index as HTML
   Rendered layouts/_header.html.erb (1.0ms)
   Rendered layouts/_footer.html.erb (5.0ms)
 Completed 200 OK in 4216ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 76ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4507ms (Views: 326.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4253ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 32ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/manageReservations.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered users/profile.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)

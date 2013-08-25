@@ -174,6 +174,22 @@ module Wservices
   def all_vehicle_types
     method = "allVehicleTypes"
     hash = post_request(method)
+
+    # breaks down big hash of cars into hashes 
+    vehicles = hash["DBEntityVehicleType"]
+    vehicle_array = []
+
+    if !hash["DBEntityVehicleType"][0].nil?
+      vehicles.each { |x| 
+        vehicle_array.push( { :descr => x["descr"][0],
+                           :longDescr => x["longDescr"][0],
+                           :id => x["id"][0],
+                           :thumbDest => x["thumbDest"][0],
+                           :imageDest => x["imageDest"][0],
+                           :usage => x["usage"][0]} ) 
+      }
+    end
+    vehicle_array
   end
 
   # Returns the phone number of the call center.

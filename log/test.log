@@ -2907,3 +2907,1254 @@ Processing by SessionsController#new as HTML
   Rendered layouts/_header.html.erb (0.0ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (59.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 177ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1988ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1698ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1758ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1696ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1857ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4454ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1885ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4152ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1834ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4062ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1857ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4097ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1826ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4169ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1829ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4187ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1827ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4382ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1885ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4384ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1876ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4289ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1860ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4206ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1812ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4227ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1845ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4202ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4396ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1948ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4359ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4337ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1864ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4248ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4186ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1830ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4228ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1822ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4399ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1821ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4262ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1891ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4128ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1875ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4083ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1862ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (5.0ms)
+Completed 200 OK in 4155ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1843ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4336ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1821ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4168ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1871ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4147ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1875ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4312ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 175ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1875ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4223ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1831ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4152ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1914ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4197ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4186ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1845ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4187ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4184ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1823ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4157ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4132ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1845ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4240ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1800ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4183ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1989ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4196ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 47ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1846ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4132ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1816ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4128ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1803ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4189ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1844ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4256ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1848ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4273ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1831ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4323ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1927ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4373ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1924ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4122ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1860ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4111ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1878ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4092ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1831ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4191ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1736ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1709ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1835ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4178ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1835ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4143ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1825ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4159ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1888ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4186ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1808ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4319ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1671ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1691ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (57.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 164ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1881ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4612ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1823ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4193ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1821ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4192ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1801ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4119ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1810ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4234ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1853ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4132ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1818ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4143ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4298ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1908ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4170ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4143ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1821ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4132ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4347ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1818ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4255ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1847ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4281ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1828ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4140ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1849ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4109ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1827ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4258ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1846ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 4034ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1826ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4151ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1816ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4151ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1814ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4150ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1898ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (33.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4259ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1744ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1676ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1677ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"example", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/
+Completed 302 Found in 1673ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1902ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4132ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1835ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4144ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1801ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4105ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1808ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4122ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://www.example.com/reservation
+Completed 302 Found in 1834ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3996ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)

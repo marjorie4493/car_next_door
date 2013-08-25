@@ -89,7 +89,7 @@ describe "Footer Links" do
         before do
 	      click_link "Reserve"
 	    end
-		it { current_path.should eq(newreservation_path) }
+		it { current_path.should eq(new_path) }
 	    it { should have_content("New Reservation") }
 	  end 
 	  

@@ -6,6 +6,8 @@ class ReservationsController < ApplicationController
   end
 
   def index
+
+    # get current and future user reservations for display on index
     current_and_future = get_current_and_future_reservations
     if current_and_future.has_key?(:current)
       @current = current_and_future[:current]
@@ -24,6 +26,14 @@ class ReservationsController < ApplicationController
     unless reservation_with_id(params[:id]).nil?
       @reservation = reservation_with_id(params[:id])
     end
+
+  end
+
+  def new 
+    #search cars for the user to reserve
+    #just displaying all vehicle types for now
+    @vehicle_array = all_vehicle_types
+    
   end
 
 	private
