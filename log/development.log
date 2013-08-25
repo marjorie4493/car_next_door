@@ -70305,3 +70305,17 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 12:26:43 +1000
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 12:26:43 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 83ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 7128ms (Views: 437.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4602ms (Views: 82.0ms | ActiveRecord: 0.0ms)

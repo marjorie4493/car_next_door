@@ -18,7 +18,7 @@ module ApplicationHelper
     method = "isLoggedIn"
     hash = Digest::SHA1.hexdigest(password + time + method)
 
-    uri = URI.parse("https://72.51.63.28/webservices/index.php/WSUser/WSRest?action=" + method + "&user=" + username + "&hash=" + hash + "&time=" + time + "&billcode=mobile")
+    uri = URI.parse("https://reserve.carnextdoor.com.au/webservices/index.php/WSUser/WSRest?action=" + method + "&user=" + username + "&hash=" + hash + "&time=" + time + "&billcode=mobile")
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
@@ -34,4 +34,10 @@ module ApplicationHelper
       false
     end
   end
+
+  def link_to_submit(text)
+    link_to_function text, "$(this).closest('form').submit()"
+  end
 end
+
+#72.51.63.28

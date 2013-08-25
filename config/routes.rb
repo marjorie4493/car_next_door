@@ -8,6 +8,7 @@ CarNextDoor::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'sessions#new'
   match '/reservation',    		  to: 'reservations#index',    			  via: 'get'
+  match '/reservation/view',    to: 'reservations#view',            via: 'post'
   match '/profile',        		  to: 'users#profile',  			        via: 'get'
   match '/myCar',          		  to: 'reservations#myCar',    			  via: 'get'
   match '/manageReservations',  to: 'reservations#manageReservations',  via: 'get'

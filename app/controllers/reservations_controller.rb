@@ -18,14 +18,12 @@ class ReservationsController < ApplicationController
     else
       @future = nil
     end
+  end
 
-    #@current_reservation = get_current_and_future_reservations
-    #@future = get_current_and_future_reservations
-    #@current_reservation = get_current_and_future_reservations
-    #@hash = vehicle_by_id(1)
-    #@stack = availability_for_stack("55",Time.now.to_i.to_s, (Time.now.to_i + 3600).to_s)
-    #@check = check_reservation_date_time("1377360000")
-    #@stack_filter = results_from_stack_filter("1","2")
+  def view
+    unless reservation_with_id(params[:id]).nil?
+      @reservation = reservation_with_id(params[:id])
+    end
   end
 
 	private

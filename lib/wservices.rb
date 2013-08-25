@@ -1,4 +1,5 @@
 require 'xmlsimple'
+require 'net/http'
 module Wservices
   # Returns a list of available times for availability for the specified stack.
   def availability_for_stack(stack_id, start_time, end_time)
@@ -94,8 +95,22 @@ module Wservices
 
   # Returns a reservation for the logged in user with the specified ID.
   def reservation_with_id(reservation_id)
-    method = "reservationWithId&reservationId=" + reservation_id
-    post_method(method)
+    method = "reservationWithId&reservationId=" + reservation_id.to_s
+    hash = post_request(method)
+    reservation = {}
+    if !hash["DBEntityReservation"].nil?
+      reservation_entity = hash["DBEntityReservation"][0]
+      reservation[:id] = reservation_entity["id"][0]
+      reservation[:start_time] = reservation_entity["startStamp"][0]
+      reservation[:end_time] = reservation_entity["endStamp"][0]
+      reservation[:driver] = reservation_entity["DBEntityDriver"][0]["fullName"][0]
+      reservation[:location] = reservation_entity["DBEntityStack"][0]["locationDescription"][0]
+      reservation[:estimate] = reservation_entity["estimate"][0]
+      reservation[:image_url] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["imageDest"][0]
+      reservation[:image_thumb_url] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["imageDest"][0]
+      reservation[:vehicle_id] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["id"][0]
+    end
+    reservation
   end
 
   # Extends a reservation with the specified ID until the specified date time.
@@ -245,12 +260,13 @@ module Wservices
     method = "getCurrentAndFutureReservations"
     hash = post_request(method)
     result = {}
+    Time.zone = get_time_zone
     if !hash["WSGetCurrentAndFutureReservationsResult"][0]["DBEntityReservation"].nil? 
       current = hash["WSGetCurrentAndFutureReservationsResult"][0]["DBEntityReservation"][0]
 
       current_reservation = {}
-      current_reservation[:start_time] = Time.at(current["startStamp"][0].to_i)
-      current_reservation[:end_time] = Time.at(current["endStamp"][0].to_i)
+      current_reservation[:start_time] = Time.zone.at(current["startStamp"][0].to_i)
+      current_reservation[:end_time] = Time.zone.at(current["endStamp"][0].to_i)
       current_reservation[:id] = current["id"][0]
       current_reservation[:estimate] = current["estimate"][0]
       current_reservation[:location] = current["DBEntityStack"][0]["lotDescription"][0]
@@ -263,8 +279,8 @@ module Wservices
       future = hash["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"]
       future_array = []
       future.each { |x| 
-        future_array.push( { :start_time => Time.at(x["startStamp"][0].to_i),
-                             :end_time => Time.at(x["endStamp"][0].to_i),
+        future_array.push( { :start_time => Time.zone.at(x["startStamp"][0].to_i),
+                             :end_time => Time.zone.at(x["endStamp"][0].to_i),
                              :id => x["id"][0],
                              :estimate => x["estimate"][0],
                              :location => x["DBEntityStack"][0]["lotDescription"][0],
@@ -377,7 +393,7 @@ module Wservices
     username = cookies.signed[:username].to_s
     password = cookies.signed[:pwd]
     hash = Digest::SHA1.hexdigest(password + time + hash_method)
-    uri = URI.parse("https://72.51.63.28/webservices/index.php/WSUser/WSRest?action=" + method + "&user=" + username + "&hash=" + hash + "&time=" + time + "&billcode=mobile")
+    uri = URI.parse("https://reserve.carnextdoor.com.au/webservices/index.php/WSUser/WSRest?action=" + method + "&user=" + username + "&hash=" + hash + "&time=" + time + "&billcode=mobile")
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
@@ -387,4 +403,15 @@ module Wservices
     hash = XmlSimple.xml_in(response.body, { 'KeyAttr' => 'name'})
     #hash = Hash.from_xml response.body
   end
+
+  def post_request3(method)
+  time =  Time.now.to_i.to_s
+  hash_method = method.split('&').first
+  username = cookies.signed[:username].to_s
+  password = cookies.signed[:pwd]
+  hash = Digest::SHA1.hexdigest(password + time + hash_method)
+  http = Curl::Easy::http_post("https://reserve.carnextdoor.com.au/webservices/index.php/WSUser/WSRest?action=" + method + "&user=" + username + "&hash=" + hash + "&time=" + time + "&billcode=mobile")
+  hash = XmlSimple.xml_in(http.body_str, { 'KeyAttr' => 'name'})
+  end
+
 end
