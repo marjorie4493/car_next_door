@@ -109,6 +109,8 @@ module Wservices
       reservation[:image_url] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["imageDest"][0]
       reservation[:image_thumb_url] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["imageDest"][0]
       reservation[:vehicle_id] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["id"][0]
+    else
+      reservation = nil
     end
     reservation
   end
@@ -211,7 +213,7 @@ module Wservices
 
     sf3 = "aStackFilter%5B%5D=0&aStackFilter%5B%5D=0&aStackFilter%5B%5D=0&aStackFilter%5B%5D=&aStackFilter%5B%5D=1377352800&aStackFilter%5B%5D=1377360000&aStackFilter%5B%5D=1&aStackFilter%5B%5D=1&aStackFilter%5B%5D=&aStackFilter%5B%5D=0"
 
-    sf4 = "aStackFilter[]=&aStackFilter[]=&aStackFilter[]=&aStackFilter[]=&aStackFilter[]=1377352800&aStackFilter[]=13773600001&aStackFilter[]=1&aStackFilter[]=1&aStackFilter[]=&aStackFilter[]="
+    sf4 = "aStackFilter=&aStackFilter=&aStackFilter=&aStackFilter=&aStackFilter=1378123200&aStackFilter=1378137600&aStackFilter=tru&aStackFilter=true&aStackFilter=&aStackFilter="
 
     method = "resultsFromStackFilter&"+ sf4 +"&includeStack=false"
     post_request(method)
@@ -409,7 +411,7 @@ module Wservices
     username = cookies.signed[:username].to_s
     password = cookies.signed[:pwd]
     hash = Digest::SHA1.hexdigest(password + time + hash_method)
-    uri = URI.parse("https://reserve.carnextdoor.com.au/webservices/index.php/WSUser/WSRest?action=" + method + "&user=" + username + "&hash=" + hash + "&time=" + time + "&billcode=mobile")
+    uri = URI.parse("https://staging.carnextdoor.com.au/webservices/index.php/WSUser/WSRest?action=" + method + "&user=" + username + "&hash=" + hash + "&time=" + time + "&billcode=mobile")
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE

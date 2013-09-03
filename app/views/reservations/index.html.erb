@@ -1,54 +1,24 @@
-  <div class="container">
-    <div class="row">
-
-      <div class="col-12 col-lg-6 col-lg-offset-3">
-        <h3>Current Reservation</h3>
-        <% if !@current.nil? %>
-          <table class="table table-condensed">
-            <tr>
-              <td><b>Reservation</b></td>
-              <td><b>Start</b></td>
-              <td><b>End</b></td>
-              <td><b>Estimate</b></td>
-            </tr>
-            <tr>
-              <td><%= form_tag reservation_view_path do %>
-                <%= hidden_field_tag "id", @current[:id] %>
-                <%= submit_tag @current[:id], class: "btn btn-default" %></td>
-              <% end %>
-              <td><%= @current[:start_time].strftime("%l:%M%P %d/%m") %></td> 
-              <td><%= @current[:end_time].strftime("%l:%M%P %d/%m") %></td>   
-              <td><%= @current[:estimate] %></td>
-            </tr>
-          </table>
-        <% else %>
-          <p>You have no current reservation.</p>
-        <% end %>
-        <h3>Future Reservations</h3>
-        <% if !@future.nil? %>
-          <table class="table table-condensed">
-            <tr>
-              <td><b>Reservation</b></td>
-              <td><b>Start</b></td>
-              <td><b>End</b></td>
-              <td><b>Estimate</b></td>
-            </tr>
-            <% @future.each do |future| %>
-              <tr>
-                <td><%= form_tag reservation_view_path do %>
-                <%= hidden_field_tag "id", future[:id] %>
-                <%= submit_tag future[:id], class: "btn btn-default" %></td>
-                <% end %>
-                <td><%= future[:start_time].strftime("%l:%M%P %d/%m") %></td>
-                <td><%= future[:end_time].strftime("%l:%M%P %d/%m") %></td>
-                <td><%= future[:estimate] %></td>
-              </tr>
-            <% end %>
-          </table>
-        <% else %>
-          <p>You have no future reservations.</p>
-      <% end %>
-    </div>
+   <% if !@current.nil? %>
+  <div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
+    <h4>Current Reservation</h4>
+    <ul data-role="listview">
+        <li><%= link_to @current[:id] + " - " + @current[:start_time].strftime("%l:%M%P") + " - " + @current[:end_time].strftime("%l:%M%P"), reservation_view_path(:id => @current[:id])  %>
+        </li>
+    </ul>
   </div>
-</div>
+<% else %>
+  <p> You have no current reservation. </p>
+<% end %>
 
+<% if !@future.nil? %>
+  <div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
+    <h4>Future Reservations</h4>
+    <ul data-role="listview">
+    <% @future.each do |future| %>
+        <li><%= link_to future[:id] + " - " + " " + future[:start_time].strftime("%l:%M%P %b %d") + " to " + future[:end_time].strftime("%l:%M%P %b %d"), reservation_view_path(:id => future[:id]) %> </a></li>
+    <% end %>
+    </ul>
+</div>
+<% else %>
+  <p>You have no future reservations.</p>
+<% end %>     

@@ -1,22 +1,3 @@
-<nav class="navbar navbar-inverse" role="navigation">
-  <div class="navbar-header"> 
-  <a class="navbar-brand" href="#">Car Next Door</a>  
-    <% if !cookies[:username].nil? %>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    
-  </div>
-    <!-- Place everything within .nav-collapse to hide it until above 768px -->
-
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
-		<li><%=  link_to "Contact Us", contact_path, method:"get" %></li> 
-        <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
-    </ul>
-  </div><!-- /.nav-collapse -->
-  <% end %>
-</nav>
+<div data-role="header">
+  <h1>Car Next Door</h1>
+</div>

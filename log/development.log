@@ -71112,3 +71112,151 @@ Processing by UsersController#profile as HTML
   Rendered layouts/_header.html.erb (1.0ms)
   Rendered layouts/_footer.html.erb (1.0ms)
 Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 79ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (5.0ms)
+Completed 200 OK in 6209ms (Views: 739.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4548ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 2801ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/manageReservations.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY=", "id"=>"9736", "commit"=>"9736"}
+  Rendered reservations/view.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 4315ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 2892ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#manageReservations as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered reservations/manageReservations.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered users/profile.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+  Rendered static_pages/contact.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 129ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (120.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 172ms (Views: 170.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY=", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 2189ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4282ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (112.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 967ms (Views: 870.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY=", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1915ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4475ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4526ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 4393ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdLGruLRb5nnDctAgPtlExgRRRb2pAkV3UOT38hJgkY=", "id"=>"9886", "commit"=>"9886"}
+  Rendered reservations/view.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 4247ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 63ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 6231ms (Views: 608.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4797ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered reservations/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 2982ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered users/profile.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KWfQbn6FImQeCpuhvdgWuVPv/H+Bc94HyEBcJlzHOus="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (42.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.0ms)

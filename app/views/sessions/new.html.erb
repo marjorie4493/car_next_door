@@ -1,26 +1,6 @@
-<div class="text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-lg-6 col-lg-offset-3">
-				<%= image_tag "car-next-door-logo.png", class:"img-responsive" %>
-				<h1>Login</h1>
-				<% if flash[:error] %>
-     			<p class="alert-danger"><%= flash[:error] %></p>
-     		<% end %>
-				<fieldset>
-					<div class="form-group">
-							<%= form_for(:session, url: sessions_path) do |f| %>
-			 	
-			  			<%= f.text_field :username, class: "form-control", placeholder: "Member ID" %> <br />
-	
-			  			<%= f.password_field :password, class: "form-control", placeholder: "Password" %><br />
-			  			<%=  f.submit "Login", class: "btn btn-lg btn-primary btn-block" %>
-						<% end %>
-					</div>
-				</fieldset>
-				<%= @vehicle %>
-			</div>
-		</div>
-	</div>
-</div>
-
+<%= image_tag "car-next-door-logo.png" %>
+<%= form_for(:session, url: sessions_path) do |f| %>
+	<%= f.text_field :username, placeholder: "Member ID" %> <br />
+	<%= f.password_field :password, placeholder: "Password" %><br />
+	<%=  f.submit "Login" %>
+<% end %>

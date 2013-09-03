@@ -12,10 +12,10 @@ describe "Authentications" do
         click_button "Login"
       end
       it { should have_link("Home") }
-	  it { should have_link("Reserve") }
-	  it { should have_link("Manage") }
-	  it { should have_link("Profile") }
-	  it { should have_link("Sign out") }
+	    it { should have_link("Reserve") }
+	    it { should have_link("Manage") }
+	    it { should have_link("Profile") }
+	    it { should have_link("Sign out") }
     end
 
     describe "with invalid login credentials" do

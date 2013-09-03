@@ -15,17 +15,17 @@ describe "Index Page Content" do
 	    it { should have_content("Current Reservation") }
 	    it { should have_content("You have no current reservation.") }
 	  else
-		it { should have_content("Current Reservation") }
-		it { should_not have_content("You have no current reservation.") }
+		  it { should have_content("Current Reservation") }
+		  it { should_not have_content("You have no current reservation.") }
 	  end
 	  if @future == nil
 	    it { should have_content("Future Reservations") }
 	    it { should have_content("You have no future reservations.") }
 	  else
-		it { should have_content("Future Reservations") }
-		it { should_not have_content("You have no future reservations.") }
+		  it { should have_content("Future Reservations") }
+		  it { should_not have_content("You have no future reservations.") }
 	  end
-    end
+  end
 	
 	describe "for owner" do
       before do

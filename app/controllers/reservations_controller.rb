@@ -2,8 +2,6 @@ class ReservationsController < ApplicationController
   include Wservices
 	before_action  :logged_in?
 	
-  def new
-  end
 
   def index
 
@@ -35,6 +33,25 @@ class ReservationsController < ApplicationController
     @vehicle_array = all_vehicle_types
     
   end
+
+  def edit
+    unless reservation_with_id(params[:id]).nil?
+      @reservation = reservation_with_id(params[:id])
+    end
+    
+  end
+
+  def update
+    #  Still fixing the layout
+       @reservation = reservation_with_id(params[:id])
+      if edit_reservation_times(params[:reservation][:id],params[:reservation][:start_time],params[:reservation][:end_time])
+        redirect_to reservations_view_path
+      else
+        render "edit" 
+      end
+ 
+  end
+
 
 	private
 		def logged_in?
