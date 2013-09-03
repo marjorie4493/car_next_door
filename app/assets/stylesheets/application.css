@@ -12,4 +12,6 @@
  *= require_tree .
  */
  html,body { overflow-x: hidden; }
- body { padding-bottom: 70px; }
+ img {
+  max-width: 75%;
+}

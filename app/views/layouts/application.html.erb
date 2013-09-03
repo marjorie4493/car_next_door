@@ -11,12 +11,12 @@
  <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
 <body>
-  <div data-role="page" data-url="<%= request.path %>">
-    <%= render 'layouts/header' %>
-    <div data-role="content">
-      <%= yield %>
-      <%= render 'layouts/footer' %> 
-    </div>
+ <div data-role="page" data-url="<%= request.path %>">
+  <%= render 'layouts/header' %>
+   <div data-role="content">
+  <%= yield %>
+    <%= render 'layouts/footer' %> 
   </div>
+</div>
 </body>
 </html>

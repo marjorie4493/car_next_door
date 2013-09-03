@@ -1,4 +1,4 @@
-<%= image_tag "car-next-door-logo.png" %>
+<%= image_tag "car-next-door-logo.png", :width => "100%" %>
 <%= form_for(:session, url: sessions_path) do |f| %>
 	<%= f.text_field :username, placeholder: "Member ID" %> <br />
 	<%= f.password_field :password, placeholder: "Password" %><br />
