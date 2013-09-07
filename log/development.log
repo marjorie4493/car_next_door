@@ -71958,3 +71958,14 @@ Processing by UsersController#profile as HTML
   Rendered layouts/_footer.html.erb (3.0ms)
   Rendered users/profile.html.erb within layouts/application (38.0ms)
 Completed 200 OK in 2784ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 101ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 4738ms (Views: 337.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.0ms)
