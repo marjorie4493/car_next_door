@@ -63,9 +63,6 @@ GEM
     ffi (1.9.0)
     ffi (1.9.0-x86-mingw32)
     formatador (0.2.4)
-    geokit (1.6.5)
-      multi_json
-    gmaps4rails (1.5.6)
     guard (1.8.2)
       formatador (>= 0.2.4)
       listen (>= 1.0.0)
@@ -209,7 +206,6 @@ GEM
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     websocket (1.0.7)
-    win32console (1.3.2)
     win32console (1.3.2-x86-mingw32)
     xml-simple (1.1.2)
     xpath (2.0.0)
@@ -223,8 +219,6 @@ DEPENDENCIES
   capybara
   childprocess
   coffee-rails (~> 4.0.0)
-  geokit
-  gmaps4rails
   guard-rspec
   guard-spork
   jbuilder (~> 1.2)
