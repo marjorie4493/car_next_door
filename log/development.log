@@ -71969,3 +71969,215 @@ Completed 200 OK in 4738ms (Views: 337.0ms | ActiveRecord: 0.0ms)
 Processing by StaticPagesController#contact as HTML
   Rendered static_pages/contact.html.erb within layouts/application (1.0ms)
 Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 106ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 4623ms (Views: 324.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (7.0ms)
+  Rendered users/profile.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 2895ms (Views: 139.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 2706ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 2784ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 2746ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 2766ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 2793ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 2721ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 2675ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 2752ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 2778ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 2855ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 2839ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 3351ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered users/profile.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 2987ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 2835ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2891ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered users/profile.html.erb within layouts/application (27.0ms)
+Completed 500 Internal Server Error in 3559ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.0ms)
+Processing by UsersController#profile as HTML
+Completed 500 Internal Server Error in 3082ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.0ms)
+Processing by UsersController#profile as HTML
+Completed 500 Internal Server Error in 2772ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.0ms)
+Processing by UsersController#profile as HTML
+Completed 500 Internal Server Error in 2613ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (22.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22211.3ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered users/profile.html.erb within layouts/application (22318.3ms)
+Completed 200 OK in 27029ms (Views: 23109.3ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22206.3ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (22232.3ms)
+Completed 500 Internal Server Error in 25307ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22187.3ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered users/profile.html.erb within layouts/application (22230.3ms)
+Completed 500 Internal Server Error in 25072ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22212.3ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (22232.3ms)
+Completed 500 Internal Server Error in 25177ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (23.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (51.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22177.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (22193.3ms)
+Completed 200 OK in 25052ms (Views: 22324.3ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22185.3ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (22213.3ms)
+Completed 200 OK in 25023ms (Views: 22254.3ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22184.3ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered users/profile.html.erb within layouts/application (22202.3ms)
+Completed 200 OK in 25012ms (Views: 22314.3ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22210.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (22227.3ms)
+Completed 200 OK in 25305ms (Views: 22390.3ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (22271.3ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (22290.3ms)
+Completed 200 OK in 25096ms (Views: 22453.3ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 2718ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 3320ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered users/profile.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 2901ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 2831ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered users/profile.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 2945ms (Views: 154.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 2878ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 2873ms (Views: 106.0ms | ActiveRecord: 0.0ms)
