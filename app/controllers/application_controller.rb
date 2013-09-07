@@ -16,7 +16,6 @@ class ApplicationController < ActionController::Base
   	elsif password.empty? || username.empty? 
   		false
   	else
-  		#valid_login(username, password)
       true
   	end
   end

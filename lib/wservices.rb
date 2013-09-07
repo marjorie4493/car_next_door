@@ -109,6 +109,7 @@ module Wservices
       reservation[:image_url] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["imageDest"][0]
       reservation[:image_thumb_url] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["imageDest"][0]
       reservation[:vehicle_id] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["id"][0]
+      reservation[:stack_id] = reservation_entity["DBEntityStack"][0]["id"][0]
     else
       reservation = nil
     end
@@ -228,7 +229,21 @@ module Wservices
   # Returns a DBEntityStack for the specified Stack ID. 
   def stack_for_id(stack_id, time)
     method = "stackForId&stackId=" + stack_id + "&time=" + time
-    post_request(method)
+    hash = post_request(method)
+    
+    stack = {}
+    if !hash["DBEntityStack"].nil?
+      stack_entity = hash["DBEntityStack"][0]
+      stack[:descr] = stack_entity["DBEntityVehicleType"][0]["descr"][0]
+      stack[:podFee] = stack_entity["podFee"][0]
+      stack[:s_descr] = stack_entity["descr"][0]
+      stack[:locationDescription] = stack_entity["locationDescription"][0]
+      stack[:latitude] = stack_entity["latitude"][0]
+      stack[:longitude] = stack_entity["longitude"][0]
+    else
+      stack = nil
+    end
+    stack
   end
 
   # Returns array containing locale information for the client.
@@ -270,7 +285,28 @@ module Wservices
   # returns a set of interesting things about this driver.
   def get_drivers_interesting_things
     method = "getDriversIntrestingThings"
-    post_request(method)
+    hash = post_request(method)
+	driversThings = {}
+	
+	#breaks down things for the drivers configuration results
+	if !hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0].nil?
+		driversThings_configResult = hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0]
+
+		driversThings[:timeZone] = driversThings_configResult["timeZone"][0]
+		driversThings[:tripTimeResolution] = driversThings_configResult["tripTimeResolution"][0]
+		driversThings[:driverName] = driversThings_configResult["driverName"][0]
+		driversThings[:driverLanguageLocale] = driversThings_configResult["driverLanguageLocale"][0]
+    end
+	
+	if !hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0].nil?
+		driversThings_driverLocations = hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0]
+
+		driversThings[:description] = driversThings_driverLocations["description"][0]
+		driversThings[:latitude] = driversThings_driverLocations["latitude"][0]
+		driversThings[:longitude] = driversThings_driverLocations["longitude"][0]
+		driversThings[:default] = driversThings_driverLocations["default"][0]
+    end
+	driversThings
   end
 
   # Returns future and current reservations.

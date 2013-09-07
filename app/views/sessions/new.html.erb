@@ -1,6 +1,12 @@
-<%= image_tag "car-next-door-logo.png", :width => "100%" %>
-<%= form_for(:session, url: sessions_path) do |f| %>
-	<%= f.text_field :username, placeholder: "Member ID" %> <br />
-	<%= f.password_field :password, placeholder: "Password" %><br />
-	<%=  f.submit "Login" %>
-<% end %>
+ <div data-role="page" data-url="<%= request.path %>">
+  <%= render 'layouts/header' %>
+  <div data-role="content">
+  <%= image_tag "car-next-door-logo.png", :width => "100%" %>
+  <%= form_for(:session, url: sessions_path) do |f| %>
+  	<%= f.text_field :username, placeholder: "Member ID" %> <br />
+  	<%= f.password_field :password, placeholder: "Password" %><br />
+  	<%=  f.submit "Login" %>
+  <% end %>
+  </div>
+  <%= render 'layouts/footer' %> 
+</div>

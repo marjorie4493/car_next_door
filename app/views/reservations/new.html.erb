@@ -6,11 +6,17 @@
 </div> -->
 
 <!-- select box which should contain all the vehicle choices -->
-<form>
-  <label for="select-native-s">Select:</label>
-  <select name="select-native-s" id="select-native-s">
-    <% @vehicle_array.each do |vehicle| %>
-      <option value= <%= vehicle[:id] %>><%= vehicle[:descr] %></option>
-    <% end %>
-  </select>
-</form>
+ <div data-role="page" data-url="<%= request.path %>">
+  <%= render 'layouts/header' %>
+  <div data-role="content">
+    <form>
+      <label for="select-native-s">Select:</label>
+      <select name="select-native-s" id="select-native-s">
+        <% @vehicle_array.each do |vehicle| %>
+          <option value= <%= vehicle[:id] %>><%= vehicle[:descr] %></option>
+        <% end %>
+      </select>
+    </form>
+  </div>
+  <%= render 'layouts/footer' %> 
+</div>

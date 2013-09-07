@@ -1,1 +1,72 @@
-<h1>Profile page</h1>
+<%= @driversThings %>
+
+<div data-role="page" data-url="<%= request.path %>">
+  <%= render 'layouts/header' %>
+  <div data-role="content">
+    <h2>Profile page</h2>
+	
+	<h3>Basic Information</h3>
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+			<u>Time Zone:</u>
+		</div>
+		<div class="ui-block-b">
+			<%= @driversThings[:timeZone] %> 
+		</div>
+		
+		<div class="ui-block-a">
+			<u>Name:</u> 
+		</div>
+		<div class="ui-block-b">
+			<%= @driversThings[:driverName] %>
+		</div>
+		
+		<div class="ui-block-a">
+			<u>Trip Time Resolution:</u>
+		</div>
+		<div class="ui-block-b">
+			<%= @driversThings[:tripTimeResolution] %>
+		</div>
+		
+		<div class="ui-block-a">
+			<u>Language Locale:</u>
+		</div>
+		<div class="ui-block-b">
+			<%= @driversThings[:driverLanguageLocale] %>
+		</div>
+	</div>
+	
+	<h3>Driver Location</h3>
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+			<u>Description:</u>
+		</div>
+		<div class="ui-block-b">
+			<%= @driversThings[:description] %>
+		</div>
+		
+		<div class="ui-block-a">
+			<u>Latitude:</u>
+		</div>
+		<div class="ui-block-b">
+			<%= @driversThings[:latitude] %>
+		</div>
+		
+		<div class="ui-block-a">
+			<u>Longitude:</u>
+		</div>
+		<div class="ui-block-b">
+			<%= @driversThings[:longitude] %>
+		</div>
+		
+		<div class="ui-block-a">
+			<u>Default:</u>
+		</div>
+		<div class="ui-block-b">
+			<%= @driversThings[:default] %>
+		</div>
+	</div>
+
+  </div>
+  <%= render 'layouts/footer' %> 
+</div>

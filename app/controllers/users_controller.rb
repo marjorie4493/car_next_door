@@ -1,4 +1,13 @@
 class UsersController < ApplicationController
-  def profile
-  end
+	include Wservices
+	before_action  :logged_in?
+	
+	def profile
+		# @name = get_driver_name
+		@driversThings = get_drivers_interesting_things
+	end
+  
+	def logged_in?
+		redirect_to root_path unless is_logged_in?
+	end
 end
