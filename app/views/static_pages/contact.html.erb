@@ -1,19 +1,41 @@
-<h1>Contact Page</h1>
+<!DOCTYPE html>
+<html>
+<div data-role="page" data-url="<%= request.path %>">
+  <%= render 'layouts/header' %>
+  <div data-role="content">
+	<%= image_tag "car-next-door-logo.png", :width => "100%" %>
+  
+  <head>
+	<h1>Contact Us</h1>	
+  </head>
+  
+  <body>
+	<h2>Car Next Door Headquarters</h2>
+	<strong><p>Car Next Door</p></strong>
+	<p>Level 2</p>
+	<p>608 Harris St</p>
+	<p>Ultimo NSW 2007</p>
+	<p>AUSTRALIA</p>
+		
+	<h3>Phone Number</h3>
+	<p id="phone">(02) 8035 8000</p>
+	
+	<h3>Fax</h3>
+	<p id="fax">(03) 8669 4151</p>
+	
+	<h3>Email Address</h3>
+	<p>info@carnextdoor.com</p>
+	
+	<h3>Roadside Assistance</h3>
+	<p>1800 225 111</p>
 
-<h2> Our Contact Details</h2>
-
-<h3>Email Address</h3>
-<p>[email]@carnextdoor.com</p>
-
-<h3>Phone Number</h3>
-<p>[0000000000]</p>
-
-<h3>Roadside Assistance</h3>
-<p>1800 225 111</p>
-
-<p>For support detailed information, please visit:</p>
-<a href="https://carnextdoor.zendesk.com/home">Support Centre</a>
-
-
+	<p>For detailed support information, please visit:</p>
+	<a href="https://carnextdoor.zendesk.com/home">Support Centre</a>
+  </body>
+  
+  </div>  
+  <%= render 'layouts/footer' %> 
+</div>
+</html>
 
     

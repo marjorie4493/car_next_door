@@ -5,7 +5,7 @@
       <div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
         <h4>Current Reservation</h4>
         <ul data-role="listview">
-            <li><%= link_to @current[:id] + " - " + @current[:start_time].strftime("%l:%M%P") + " - " + @current[:end_time].strftime("%l:%M%P"), reservation_view_path(:id => @current[:id])  %>
+            <li><%= link_to @current[:id] + " - " + @current[:start_time].strftime("%l:%M%P") + " - " + @current[:end_time].strftime("%l:%M%P"), reservation_view_path(:id => @current[:id]), { "data-transition" => "slide" }  %>
             </li>
         </ul>
       </div>
@@ -18,7 +18,8 @@
         <h4>Future Reservations</h4>
         <ul data-role="listview">
         <% @future.each do |future| %>
-            <li><%= link_to future[:id] + " - " + " " + future[:start_time].strftime("%l:%M%P %b %d") + " to " + future[:end_time].strftime("%l:%M%P %b %d"), reservation_view_path(:id => future[:id]) %> </a></li>
+            <li><%= link_to future[:id] + " - " + " " + future[:start_time].strftime("%l:%M%P %b %d") + " to " + future[:end_time].strftime("%l:%M%P %b %d"), reservation_view_path(:id => future[:id]), { "data-transition" => "slide", "data-prefetch" => "true" } %>
+            </li>
         <% end %>
         </ul>
     </div>
@@ -27,4 +28,4 @@
     <% end %>     
   </div>
   <%= render 'layouts/footer' %> 
-</div>
+</2div>

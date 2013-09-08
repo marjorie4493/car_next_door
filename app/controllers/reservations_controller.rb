@@ -26,8 +26,6 @@ class ReservationsController < ApplicationController
       # for showing on map, this returns a latitude and longitude which can be used for mapping
 
       @stack = stack_for_id(@reservation[:stack_id], @reservation[:start_time])
-
-
     end
 
   end
@@ -36,7 +34,14 @@ class ReservationsController < ApplicationController
     #search cars for the user to reserve
     #just displaying all vehicle types for now
     @vehicle_array = all_vehicle_types
-    
+    if (Time.now.at_end_of_day - Time.now).to_i / 60 < 15
+      @date = Date.current + 1.day
+    else
+      @date = Date.current
+    end
+    @times = Array.new(24.hours / 15.minutes) do |i|
+      (Time.now.midnight + (i*15.minutes)).strftime("%I:%M %p")
+    end
   end
 
   def edit

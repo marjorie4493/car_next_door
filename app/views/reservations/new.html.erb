@@ -1,22 +1,71 @@
-<h1>New Reservation</h1>
-
-<!-- just the xml printing for now cuz it looks messy without it
-<div style="width:300px;height:300px;line-height:3em;overflow:scroll;padding:5px;background-color:#FCFADD;color:#714D03;border:4px double #DEBB07;">
-<%= @vehicle_array %>
-</div> -->
-
-<!-- select box which should contain all the vehicle choices -->
- <div data-role="page" data-url="<%= request.path %>">
+ <div data-role="page" id="one">
   <%= render 'layouts/header' %>
   <div data-role="content">
+    <h1>New Reservation</h1>
     <form>
-      <label for="select-native-s">Select:</label>
+      <label for="start-date">Start time:</label>
+        <select name="start-date" id="start-date" data-mini="true"> 
+          <% (@date..(@date + 2.months)).each do |day| %>
+            <option value= <%= day %>>  
+              <% if day == Date.current %>
+                Today 
+              <% elsif day == Date.current + 1.day %>
+                Tomorrow
+              <% else %>
+                <%= day.strftime("%a %d %B, %Y") %> 
+              <% end %>
+            </option>
+          <% end %>
+        </select>
+
+        <%= select_tag "start-time", options_for_select(@times, :selected => time_to_next_quarter_hour(Time.now.strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+
+      
+        <label for="end-date">End time:</label>
+        <select name="end-date" id="end-date" data-mini="true"> 
+          <% (@date..(@date + 2.months)).each do |day| %>
+            <option value= <%= day %>>  
+              <% if day == Date.current %>
+                Today 
+              <% elsif day == Date.current + 1.day %>
+                Tomorrow
+              <% else %>
+                <%= day.strftime("%a %d %B, %Y") %> 
+              <% end %>
+            </option>
+          <% end %>
+        </select>
+        
+
+        <%= select_tag "end-time", options_for_select(@times, :selected => time_to_next_quarter_hour((Time.now + 15.minutes).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+
+    <%= link_to "Next", "#two", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+  </div>
+  <%= render 'layouts/footer' %> 
+</div>
+
+<div data-role="page" id="two">
+  <%= render 'layouts/header' %>
+  <div data-role="content">
+     <label for="select-native-s">Select:</label>
       <select name="select-native-s" id="select-native-s">
         <% @vehicle_array.each do |vehicle| %>
           <option value= <%= vehicle[:id] %>><%= vehicle[:descr] %></option>
         <% end %>
       </select>
+    <%= link_to "Back", "#one", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+    <%= link_to "Next", "#three", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+  </div>
+  <%= render 'layouts/footer' %> 
+</div>
+
+<div data-role="page" id="three">
+  <%= render 'layouts/header' %>
+  <div data-role="content">
+    <p>Page 3</p>
     </form>
+    <%= link_to "Back", "#two", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+    <%= link_to "Next", "#four", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
   </div>
   <%= render 'layouts/footer' %> 
 </div>
