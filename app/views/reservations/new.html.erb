@@ -18,7 +18,7 @@
           <% end %>
         </select>
 
-        <%= select_tag "start-time", options_for_select(@times, :selected => time_to_next_quarter_hour(Time.now.strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+        <%= select_tag "start-time", options_for_select(@times, :selected => time_to_next_quarter_hour(@time.at(Time.now).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
 
       
         <label for="end-date">End time:</label>
@@ -37,7 +37,7 @@
         </select>
         
 
-        <%= select_tag "end-time", options_for_select(@times, :selected => time_to_next_quarter_hour((Time.now + 15.minutes).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+        <%= select_tag "end-time", options_for_select(@times, :selected => time_to_next_quarter_hour((@time.at(Time.now + 15.minutes)).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
 
     <%= link_to "Next", "#two", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
   </div>
@@ -47,13 +47,20 @@
 <div data-role="page" id="two">
   <%= render 'layouts/header' %>
   <div data-role="content">
-     <label for="select-native-s">Select:</label>
+     <label for="select-native-s">Select Vehicle</label>
       <select name="select-native-s" id="select-native-s">
         <% @vehicle_array.each do |vehicle| %>
           <option value= <%= vehicle[:id] %>><%= vehicle[:descr] %></option>
         <% end %>
       </select>
-    <%= link_to "Back", "#one", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+    <fieldset data-role="controlgroup">
+      <legend>Amenities</legend>
+      <% @amenities.each do |amenity| %> 
+      <input type="checkbox" name="<%= amenity[:name] %>" id="<%= amenity[:name] %>">
+      <label for="<%= amenity[:name] %>"><%= amenity[:description] %></label>
+      <% end %>
+    </fieldset>
+    <%= link_to "Back", "#one", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
     <%= link_to "Next", "#three", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
   </div>
   <%= render 'layouts/footer' %> 
@@ -63,8 +70,9 @@
   <%= render 'layouts/header' %>
   <div data-role="content">
     <p>Page 3</p>
+
     </form>
-    <%= link_to "Back", "#two", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+    <%= link_to "Back", "#two", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
     <%= link_to "Next", "#four", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
   </div>
   <%= render 'layouts/footer' %> 

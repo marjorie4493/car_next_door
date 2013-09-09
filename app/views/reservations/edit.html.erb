@@ -1,10 +1,64 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-lg-6 col-lg-offset-3">
+ <div data-role="page" id="one">
+<%= render 'layouts/footer' %>
+<%= render 'layouts/header' %>
       <h2>Edit Reservation</h2>
-      
+	   
+	<%@start_time =  Time.at(@reservation[:start_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
+	<%@end_time =  Time.at(@reservation[:end_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
+    <p><b>Location: </b><%= @reservation[:location] %></p>
+    <p><b>Start Time: </b> <%= @start_time%> </p>
+    <p><b>End Time: </b> <%= @end_time%> </p>
 
-         
-    </div>
+      <form>
+      <label for="start-date">Start time:</label>
+        <select name="start-date" id="start-date" data-mini="true"> 
+          <% (@date..(@date + 2.months)).each do |day| %>
+            <option value= <%= day %>>  
+              <% if day == Date.current %>
+                Today 
+              <% elsif day == Date.current + 1.day %>
+                Tomorrow
+              <% else %>
+                <%= day.strftime("%a %d %B, %Y") %> 
+              <% end %>
+            </option>
+          <% end %>
+        </select>
+
+        <%= select_tag "start-time", options_for_select(@times, :selected => time_to_next_quarter_hour(Time.now.strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+
+      
+        <label for="end-date">End time:</label>
+        <select name="end-date" id="end-date" data-mini="true"> 
+          <% (@date..(@date + 2.months)).each do |day| %>
+            <option value= <%= day %>>  
+              <% if day == Date.current %>
+                Today 
+              <% elsif day == Date.current + 1.day %>
+                Tomorrow
+              <% else %>
+                <%= day.strftime("%a %d %B, %Y") %> 
+              <% end %>
+            </option>
+          <% end %>
+        </select>
+        
+
+        <%= select_tag "end-time", options_for_select(@times, :selected => time_to_next_quarter_hour((Time.now + 15.minutes).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+
+    <%= link_to "Submit", "#submit", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+   
   </div>
 </div>
+
+<div data-role="page" id="submit">
+  <%= render 'layouts/header' %>
+  <div data-role="content">
+
+     
+
+    
+  </div>
+  <%= render 'layouts/footer' %> 
+</div>
+    </form>

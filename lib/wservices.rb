@@ -184,12 +184,12 @@ module Wservices
 
     if !hash["DBEntityVehicleType"][0].nil?
       vehicles.each { |x| 
-        vehicle_array.push( { :descr => x["descr"][0],
-                           :longDescr => x["longDescr"][0],
-                           :id => x["id"][0],
-                           :thumbDest => x["thumbDest"][0],
-                           :imageDest => x["imageDest"][0],
-                           :usage => x["usage"][0]} ) 
+        vehicle_array.push( { :descr     => x["descr"][0],
+                              :longDescr => x["longDescr"][0],
+                              :id        => x["id"][0],
+                              :thumbDest => x["thumbDest"][0],
+                              :imageDest => x["imageDest"][0],
+                              :usage     => x["usage"][0] } ) 
       }
     end
     vehicle_array
@@ -204,7 +204,17 @@ module Wservices
   # Returns the available amenities for vehicles.
   def amenities
     method = "amenities"
-    post_request(method)
+    hash = post_request(method)
+    amenities = hash["WSAmenity"]
+    amenities_array = []
+
+    if !amenities.nil?
+      amenities.each { |x| 
+        amenities_array.push( { :name        => x["name"][0],
+                                :description => x["description"][0] } ) 
+      }
+    end
+    amenities_array
   end
 
   # Filters results
@@ -286,27 +296,27 @@ module Wservices
   def get_drivers_interesting_things
     method = "getDriversIntrestingThings"
     hash = post_request(method)
-	driversThings = {}
+	drivers_things = {}
 	
 	#breaks down things for the drivers configuration results
 	if !hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0].nil?
-		driversThings_configResult = hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0]
+		drivers_things_config_result = hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0]
 
-		driversThings[:timeZone] = driversThings_configResult["timeZone"][0]
-		driversThings[:tripTimeResolution] = driversThings_configResult["tripTimeResolution"][0]
-		driversThings[:driverName] = driversThings_configResult["driverName"][0]
-		driversThings[:driverLanguageLocale] = driversThings_configResult["driverLanguageLocale"][0]
+		drivers_things[:time_zone] = drivers_things_config_result["timeZone"][0]
+		drivers_things[:trip_time_resolution] = drivers_things_config_result["tripTimeResolution"][0]
+		drivers_things[:driver_name] = drivers_things_config_result["driverName"][0]
+		drivers_things[:driver_language_locale] = drivers_things_config_result["driverLanguageLocale"][0]
     end
 	
 	if !hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0].nil?
-		driversThings_driverLocations = hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0]
+		drivers_things_driver_locations = hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0]
 
-		driversThings[:description] = driversThings_driverLocations["description"][0]
-		driversThings[:latitude] = driversThings_driverLocations["latitude"][0]
-		driversThings[:longitude] = driversThings_driverLocations["longitude"][0]
-		driversThings[:default] = driversThings_driverLocations["default"][0]
+		drivers_things[:description] = drivers_things_driver_locations["description"][0]
+		drivers_things[:latitude] = drivers_things_driver_locations["latitude"][0]
+		drivers_things[:longitude] = drivers_things_driver_locations["longitude"][0]
+		drivers_things[:default] = drivers_things_driver_locations["default"][0]
     end
-	driversThings
+	drivers_things
   end
 
   # Returns future and current reservations.

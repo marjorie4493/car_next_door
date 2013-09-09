@@ -4,10 +4,36 @@
     <h2>Reservation Details</h2>
     <%= image_tag @reservation[:image_thumb_url], class:"img-responsive" %>
     <p><%= @reservation[:id] %><br /></p>
+	
+	  <%= link_to "Extend", reservation_extend_path(:id => @reservation[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %>
+      <%= link_to "Edit", reservation_edit_path(:id => @reservation[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %>
+    
+  <%@start_time =  Time.at(@reservation[:start_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
+  <%@end_time =  Time.at(@reservation[:end_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
 
     <p><b>Name: </b><%= @reservation[:driver] %></p>
-    <p><b>Location: </b><%= @reservation[:location] %></p>
     <p><b>Cost: </b><%= @reservation[:estimate] %></p> 
+    <p><b>Start Time: </b> <%= @start_time%> </p>
+    <p><b>End Time: </b> <%= @end_time%> </p>
+	
+	<p><b>Vehicle Information</b></p>
+	<p><b>Location: </b><%= @reservation[:location] %></p>
+	
+	<% if @reservation[:vehicle_name].to_s != "{}" %>
+      <p><b>Name: </b><%= @reservation[:vehicle_name] %></p>
+	<% end %>
+	
+	<% if @reservation[:vehicle_description].to_s != "{}" %>
+	  <p><b>Description: </b><%= @reservation[:vehicle_description] %></p>
+	<% end %>
+	
+	<% if @reservation[:vehicle_short].to_s != "{}" %>
+	  <p>Short Description:<%= @reservation[:vehicle_short] %></p>
+	<% end %>
+	
+	<% if @reservation[:vehicle_long].to_s != "{}" %>
+	  <p><b>Long Description: </b><%= @reservation[:vehicle_long] %></p>
+	<% end %>
 
   <p><b>Cancellation Policy</b></p>
   <div>Cancellation Fee's, as per below, will be automatically applied if you cancel your booking within 48 hours of the reserved start time, <i>except if</i> within 1 hour of making a booking:</div>
@@ -17,7 +43,11 @@
   </br >
   <div>
   * Note, if you cancel your booking and the car is subsequently booked by another member, you will not be charged the cancellation fee for that period.
+
+</br>
+<%= @view%>
   </div>
-    </div>
+    <%= link_to "Edit", reservation_edit_path(:id => @reservation[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true" } %>  
+  </div>
   <%= render 'layouts/footer' %> 
 </div>
