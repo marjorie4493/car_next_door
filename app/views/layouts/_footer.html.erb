@@ -5,7 +5,7 @@
         <li><%= link_to "Home", reservation_path, { "data-icon" => "home" } %>
         </li>
         <li><%= link_to "Reserve", new_path, { "data-icon" => "arrow-r", "data-ajax" => "false", "class" => "new-reservation" } %></li>
-        <li><%= link_to "Profile", profile_path, { "data-icon" => "gear" } %></li>
+        <li><%= link_to "Profile", profile_path, { "data-icon" => "gear" ,"data-ajax" => "false"} %></li>
 		<li><%= link_to "Contact Us", contact_path, { "data-icon" => "info" } %></li>
         <li><%= link_to "Sign out", signout_path, { :method => "delete", "data-icon" => "star" } %></li>
       </ul>
