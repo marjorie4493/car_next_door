@@ -1,3 +1,9 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//The CSS for the map container, that appears in the profile page, to show the drivers home location
+	div#map_container{
+		width:288px;
+		height:200px;
+	}

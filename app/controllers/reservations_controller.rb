@@ -78,27 +78,78 @@ class ReservationsController < ApplicationController
   def extend
     unless reservation_with_id(params[:id]).nil?
       @reservation = reservation_with_id(params[:id])
-	  
-	  @start_time = Time.at(@reservation[:start_time].to_i).strftime("%I:%M %p %d/%m/%Y")
-	  @end_time = Time.at(@reservation[:end_time].to_i).strftime("%I:%M %p %d/%m/%Y")
-	  
-	   if (Time.now.at_end_of_day - Time.now).to_i / 60 < 15
-		@date = Date.current + 1.day
-		else
-		@date = Date.current
-		end
-		@times = Array.new(24.hours / 15.minutes) do |i|
-		  (Time.now.midnight + (i*15.minutes)).strftime("%I:%M %p")
-		end
-	end
-	if !params[:end_date].nil? && !params[:end_time].nil?
-	end_date1 = DateTime.strptime(params[:end_date], "%Y-%m-%d")
-	end_time1 = DateTime.strptime(params[:end_time], "%I:%M %p")
-	end_date_time = DateTime.new(end_date1.year, end_date1.month, end_date1.day, end_time1.hour, end_time1.min).to_i
-	# if extend_reservation_with_id(params[:id], end_date_time)
-	  # redirect_to reservation_view_path(params[:id])
-	# end	
-	end
+    
+    # Current reservation times
+    @start_time_string = Time.at(@reservation[:start_time].to_i).strftime("%I:%M %p %d/%m/%Y")
+    @end_time = Time.at(@reservation[:end_time].to_i)
+    end_date = @end_time.to_date
+    @end_time_string = @end_time.strftime("%I:%M %p %d/%m/%Y")
+    
+    # Determines selection options
+     if (@end_time.at_end_of_day - @end_time).to_i / 60 < 15
+    @date = end_date + 1.day
+    else
+    @date = end_date
+    end
+    @times = Array.new(24.hours / 15.minutes) do |i|
+      (@end_time +((i+1)*15.minutes)).strftime("%I:%M %p")
+    end
+    end
+  
+  # Extend reservation using users input
+  if !params[:end_date].nil? && !params[:end_time].nil?
+    end_date1 = DateTime.strptime(params[:end_date], "%Y-%m-%d")
+    end_time1 = DateTime.strptime(params[:end_time], "%I:%M %p")
+    end_date_time = Time.new(end_date1.year, end_date1.month, end_date1.day, end_time1.hour, end_time1.min).to_i
+    Time.zone = get_time_zone
+    end_date_time1 = Time.zone.at(end_date_time).to_i
+    extended = extend_reservation_with_id(params[:id].to_s, end_date_time1.to_s)
+    if extended == "1"
+      redirect_to reservation_view_path(:id => params[:id]), { "data-ajax" => "false" }
+    else
+    # Error
+      @result = extended["fault"][0]["value"][0]["struct"][0]["member"][1]["value"][0]["string"][0]
+    end 
+  end
+  end
+  
+  # End a current reservation early
+  def early
+    unless reservation_with_id(params[:id]).nil?
+      @reservation = reservation_with_id(params[:id])
+    
+    # Current reservation times
+    @start_time_string = Time.at(@reservation[:start_time].to_i).strftime("%I:%M %p %d/%m/%Y")
+    @end_time = Time.at(@reservation[:end_time].to_i)
+    @end_time_string = @end_time.strftime("%I:%M %p %d/%m/%Y")
+    
+    # Determines selection options
+    if (Time.now.at_end_of_day - Time.now).to_i / 60 < 15
+      @date = Date.current + 1.day
+    else
+      @date = Date.current
+    end
+    
+    @times = Array.new(24.hours / 15.minutes) do |i|
+      time_to_next_quarter_hour((Time.now + (i)*15.minutes).strftime("%I:%M %p"))
+    end
+  end
+  
+  # End early a reservation using users input
+    if !params[:end_date].nil? && !params[:end_time].nil?
+      end_date1 = DateTime.strptime(params[:end_date], "%Y-%m-%d")
+      end_time1 = DateTime.strptime(params[:end_time], "%I:%M %p")
+      end_date_time = Time.new(end_date1.year, end_date1.month, end_date1.day, end_time1.hour, end_time1.min).to_i
+      Time.zone = get_time_zone
+      end_date_time1 = Time.zone.at(end_date_time).to_i
+      ended_early = early_return_for_reservation_with_id(params[:id].to_s, end_date_time1.to_s)
+      if ended_early == "1"
+        redirect_to reservation_view_path(:id => params[:id]), { "data-ajax" => "false" }
+      else
+      # Error
+        @result = ended_early["fault"][0]["value"][0]["struct"][0]["member"][1]["value"][0]["string"][0]
+      end 
+    end
   end
 
 	private

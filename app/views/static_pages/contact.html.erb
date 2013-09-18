@@ -3,36 +3,36 @@
 <div data-role="page" data-url="<%= request.path %>">
   <%= render 'layouts/header' %>
   <div data-role="content">
-	<%= image_tag "car-next-door-logo.png", :width => "100%" %>
   
-  <head>
 	<h1>Contact Us</h1>	
-  </head>
-  
-  <body>
-	<h2>Car Next Door Headquarters</h2>
-	<strong><p>Car Next Door</p></strong>
+<br>
+	<h3>Address</h3>
+	<p><strong>Car Next Door</strong></p>
 	<p>Level 2</p>
 	<p>608 Harris St</p>
 	<p>Ultimo NSW 2007</p>
 	<p>AUSTRALIA</p>
-		
+<br>	
 	<h3>Phone Number</h3>
-	<p id="phone">(02) 8035 8000</p>
-	
+	<p id="phone"><a href="02 8035 8000">(02) 8035 8000</a></p>
+<br>
 	<h3>Fax</h3>
-	<p id="fax">(03) 8669 4151</p>
-	
+	<p id="fax">(02) 8669 4151</p>
+<br>
 	<h3>Email Address</h3>
-	<p>info@carnextdoor.com</p>
-	
+	<address>
+		<p>
+			<a href="mailto:info@carnextdoor.com">info@carnextdoor.com</a>
+		</p>
+	</address>
+<br>
 	<h3>Roadside Assistance</h3>
-	<p>1800 225 111</p>
-
-	<p>For detailed support information, please visit:</p>
+	<p><a href="1800 225 111">1800 225 111</a></p>
+<br>
+	<p>For detailed support information, please visit the:</p>
 	<a href="https://carnextdoor.zendesk.com/home">Support Centre</a>
-  </body>
-  
+<br>
+</br>
   </div>  
   <%= render 'layouts/footer' %> 
 </div>

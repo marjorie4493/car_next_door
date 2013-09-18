@@ -72963,3 +72963,669 @@ Processing by UsersController#profile as HTML
   Rendered layouts/_footer.html.erb (1.0ms)
   Rendered users/profile.html.erb within layouts/application (11.0ms)
 Completed 200 OK in 2587ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 49517ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 3783ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 3117ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered users/profile.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 2559ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 2745ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 2708ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 2910ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 2638ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (48.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (143.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered users/profile.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 2705ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered users/profile.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 2944ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 2595ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 2728ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 2772ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 2610ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 2705ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 3175ms (Views: 537.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 2839ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 2778ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 2718ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 195ms (Views: 193.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 2864ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 141ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 4174ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 2634ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 5848ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 4977ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 4553ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 4739ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 4436ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered users/profile.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 4512ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered users/profile.html.erb within layouts/application (103.0ms)
+Completed 200 OK in 6971ms (Views: 961.1ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 9122ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 5107ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 5741ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 4976ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (5.0ms)
+  Rendered reservations/index.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 4886ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (17.0ms)
+  Rendered reservations/new.html.erb within layouts/application (309.0ms)
+Completed 200 OK in 7348ms (Views: 436.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 4934ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/index.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 4702ms (Views: 197.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9764"}
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/view.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 8368ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#extend as HTML
+  Parameters: {"id"=>"9764"}
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/extend.html.erb within layouts/application (102.0ms)
+Completed 200 OK in 4342ms (Views: 167.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"9764"}
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/edit.html.erb within layouts/application (251.0ms)
+Completed 200 OK in 4774ms (Views: 324.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 4526ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9764"}
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/view.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 8326ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"9764"}
+  Rendered layouts/_footer.html.erb (4.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/edit.html.erb within layouts/application (221.0ms)
+Completed 200 OK in 4472ms (Views: 291.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9764"}
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered reservations/view.html.erb within layouts/application (122.0ms)
+Completed 200 OK in 8952ms (Views: 290.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#extend as HTML
+  Parameters: {"id"=>"9764", "utf8"=>"✓", "end_date"=>"2013-09-10", "end_time"=>"12:00 AM", "commit"=>"Extend"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/extend.html.erb within layouts/application (190.0ms)
+Completed 200 OK in 4598ms (Views: 255.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 4625ms (Views: 191.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 5764ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (5.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (124.0ms)
+Completed 200 OK in 243ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered users/profile.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 5601ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 276ms (Views: 273.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 4790ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (103.0ms)
+Completed 200 OK in 198ms (Views: 196.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 4899ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 22ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/index.html.erb within layouts/application (121.0ms)
+Completed 200 OK in 5290ms (Views: 827.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 4645ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 5348ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 5519ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (111.0ms)
+Completed 200 OK in 7174ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 4864ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 6942ms (Views: 189.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/new.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 7170ms (Views: 154.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (119.0ms)
+Completed 200 OK in 7804ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (98.0ms)
+Completed 200 OK in 11518ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 4823ms (Views: 221.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered reservations/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 4386ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 7201ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (96.0ms)
+Completed 200 OK in 6220ms (Views: 1116.1ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 4264ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered users/profile.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 5120ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RRQxGlzi7hMT4zipqFBniNBF0FqIxKrs1EuSP9W/RHA="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered sessions/new.html.erb within layouts/application (124.0ms)
+Completed 200 OK in 181ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RRQxGlzi7hMT4zipqFBniNBF0FqIxKrs1EuSP9W/RHA=", "session"=>{"username"=>"971", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1562ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered reservations/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 4188ms (Views: 154.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9777"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/view.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 8054ms (Views: 135.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#extend as HTML
+  Parameters: {"id"=>"9777"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/extend.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 5143ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"9777"}
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/edit.html.erb within layouts/application (111.0ms)
+Completed 200 OK in 4304ms (Views: 183.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 4387ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 4594ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (97.0ms)
+Completed 200 OK in 166ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 4034ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 4729ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 7316ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (224.0ms)
+Completed 200 OK in 12545ms (Views: 304.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 4158ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9777"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/view.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 8074ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9777"}
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/view.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 7430ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9777"}
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/view.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 7647ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#extend as HTML
+  Parameters: {"id"=>"9777"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/extend.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 3955ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"9777"}
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/edit.html.erb within layouts/application (237.0ms)
+Completed 200 OK in 4277ms (Views: 290.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 5615ms (Views: 878.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 4767ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 299ms (Views: 285.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 3989ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lZi8BPhbAQT1FbiG3A5a4CUkkhph9zGp5MJxoT/BicQ="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered sessions/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 68ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lZi8BPhbAQT1FbiG3A5a4CUkkhph9zGp5MJxoT/BicQ=", "session"=>{"username"=>"qw", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1550ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered sessions/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 84ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lZi8BPhbAQT1FbiG3A5a4CUkkhph9zGp5MJxoT/BicQ=", "session"=>{"username"=>"970", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1821ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 4072ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 4753ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 4542ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 6955ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 6908ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered static_pages/contact.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 4457ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 5005ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#profile as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered users/profile.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 4980ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lZi8BPhbAQT1FbiG3A5a4CUkkhph9zGp5MJxoT/BicQ="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)

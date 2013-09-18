@@ -13,7 +13,6 @@ describe "Authentications" do
       end
       it { should have_link("Home") }
 	    it { should have_link("Reserve") }
-	    it { should have_link("Manage") }
 	    it { should have_link("Profile") }
 	    it { should have_link("Sign out") }
     end
@@ -24,7 +23,7 @@ describe "Authentications" do
         fill_in "session_password", with: "password"
         click_button "Login"
       end
-      it { should have_content("Login") }
+      it { should have_button("Login") }
       it { should_not have_content("You have signed in") }
     end
 
@@ -34,7 +33,7 @@ describe "Authentications" do
         fill_in "session_password", with: ""
         click_button "Login"
       end
-      it { should have_content("Login") }
+      it { should have_button("Login") }
       it { should_not have_content("You have signed in") }
     end
   end

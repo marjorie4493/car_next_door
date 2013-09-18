@@ -133,7 +133,7 @@ module Wservices
   # Shortens the end time of a reservation with the specified ID until the
   # specified date time. Returns true on success, throws exception if not.
   def early_return_for_reservation_with_id(reservation_id, end_time)
-    method = "earlyReturnForReservationWithId&reservationId=" + reseveration_id + "&endTime=" + end_time
+    method = "earlyReturnForReservationWithId&reservationId=" + reservation_id + "&endTime=" + end_time
     post_request(method)
   end
 

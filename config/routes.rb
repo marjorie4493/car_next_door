@@ -18,7 +18,7 @@ CarNextDoor::Application.routes.draw do
   match '/signout',             to: 'sessions#destroy',             via: 'delete'
   match '/reservation/edit',    to: 'reservations#edit',           via: 'get'
   match '/reservation/extend',  to: 'reservations#extend',          via: 'get'
-
+  match '/reservation/early',  to: 'reservations#early',          via: 'get'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
