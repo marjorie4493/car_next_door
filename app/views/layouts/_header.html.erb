@@ -1,7 +1,7 @@
 <div data-role="header">
   <h1>Car Next Door</h1>
-  
-  <%= link_to "Contact Us", contact_path, {"data-role" => "button" } %>
-  <%= link_to "Sign out", signout_path, { :method => "delete", "data-role" => "button"} %>
-  
+  <% if !cookies[:username].nil? %>
+	  <%= link_to "Contact Us", contact_path, {"data-role" => "button" } %>
+	  <%= link_to "Sign out", signout_path, { :method => "delete", "data-role" => "button"} %>
+  <% end %>
 </div>
