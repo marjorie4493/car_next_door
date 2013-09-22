@@ -63,6 +63,7 @@ GEM
     ffi (1.9.0)
     ffi (1.9.0-x86-mingw32)
     formatador (0.2.4)
+    geocoder (1.1.8)
     guard (1.8.2)
       formatador (>= 0.2.4)
       listen (>= 1.0.0)
@@ -91,6 +92,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
+    log4r (1.1.10)
     lumberjack (1.0.4)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -204,6 +206,7 @@ GEM
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     websocket (1.0.7)
+    win32console (1.3.2)
     win32console (1.3.2-x86-mingw32)
     xml-simple (1.1.2)
     xpath (2.0.0)
@@ -217,11 +220,13 @@ DEPENDENCIES
   capybara
   childprocess
   coffee-rails (~> 4.0.0)
+  geocoder
   guard-rspec
   guard-spork
   jbuilder (~> 1.2)
   jquery-rails
   libnotify
+  log4r
   nokogiri
   paperclip
   pg

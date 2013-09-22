@@ -38,6 +38,8 @@ class ApplicationController < ActionController::Base
 
 	  if root.xpath("/methodResponse").text  == "1"
 	  	true
+	  	logger = Log4r::Logger['login']
+	  	logger.info ('user ' + username + ' has successfully logged in at :' + time + ".")
 	  else
 	  	false
 	  end
@@ -60,19 +62,9 @@ class ApplicationController < ActionController::Base
 	end
 
 	def time_to_next_quarter_hour(time)
-      array = time.split(':')
-      minutes = array[1].split(' ')
-      quarter = ((minutes[0].to_i % 60) / 15.0).ceil
-      if quarter < 4
-        mins = (quarter * 15) % 60
-      elsif quarter == 4
-        mins = "00"
-        unless array[0] == 12
-          array[0] = array[0].to_i + 1
-        else
-          array[0] = 1
-        end
-      end
-      time = array[0].to_s.rjust(2, '0') + ":" + mins.to_s.rjust(2, '0') + " " + minutes[1].to_s
-    end
+    array = time.to_a
+    quarter = ((array[1] % 60) / 15.0).ceil
+    array[1] = (quarter * 15) % 60
+    Time.local(*array) + (quarter == 4 ? 3600 : 0)
+  end
 end

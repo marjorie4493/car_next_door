@@ -1,10 +1,7 @@
 source 'https://rubygems.org'
-#ruby '2.0.0'
+ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-
-# Rails logging gem
-gem 'log4r'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
@@ -47,12 +44,11 @@ gem 'jbuilder', '~> 1.2'
 gem 'nokogiri'
 
 # rails server
-# gem 'puma'
+#gem 'puma'
 
 gem 'rails_12factor'
 
-# gem 'curb'
-
+gem 'curb'
 
 gem 'paperclip'
 
@@ -81,7 +77,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-# Gem for logger
-gem 'log4r'
-

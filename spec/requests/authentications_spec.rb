@@ -1,20 +1,21 @@
 require 'spec_helper'
 
-describe "Authentications" do
+describe "Authentication" do
   subject { page }
 
   describe "Login" do
     before { visit root_path }
+    
     describe "with valid login credentials" do
       before do
-        fill_in "session_username", with: "971"
+        fill_in "session_username", with: "970"
         fill_in "session_password", with: "usyd"
         click_button "Login"
       end
       it { should have_link("Home") }
-	    it { should have_link("Reserve") }
-	    it { should have_link("Profile") }
-	    it { should have_link("Sign out") }
+      it { should have_link("Reserve") }
+      it { should have_link("Profile") }
+      it { should have_link("Sign out") }
     end
 
     describe "with invalid login credentials" do

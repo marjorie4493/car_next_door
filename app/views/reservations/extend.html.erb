@@ -27,6 +27,7 @@
  	<%= select_tag "end_time", options_for_select(@times, :selected => (@end_time + 15.minutes).strftime("%I:%M %p")), { "data-mini" => "true" } %>  
 	<%= submit_tag "Extend", class: "form_submit" %>
 	<% end %>
+	<%= link_to "Back", reservation_view_path(:id => @reservation[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true" } %>
 	<%= @result %>
 	<br>
   <%= render 'layouts/footer' %>

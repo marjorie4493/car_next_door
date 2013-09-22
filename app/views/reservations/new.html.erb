@@ -1,79 +1,116 @@
- <div data-role="page" id="one">
-  <%= render 'layouts/header' %>
-  <div data-role="content">
-    <h1>New Reservation</h1>
-    <form>
-      <label for="start-date">Start time:</label>
-        <select name="start-date" id="start-date" data-mini="true"> 
-          <% (@date..(@date + 2.months)).each do |day| %>
-            <option value= <%= day %>>  
-              <% if day == Date.current %>
-                Today 
-              <% elsif day == Date.current + 1.day %>
-                Tomorrow
-              <% else %>
-                <%= day.strftime("%a %d %B, %Y") %> 
-              <% end %>
-            </option>
-          <% end %>
-        </select>
+<%= form_tag('/reservation/search', method: 'post') do %>
+  <div data-role="page" id="one">
+    <%= render 'layouts/header' %>
 
-        <%= select_tag "start-time", options_for_select(@times, :selected => time_to_next_quarter_hour(@time.at(Time.now).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+    <div data-role="content">
+      <h1>New Reservation</h1>
 
-      
-        <label for="end-date">End time:</label>
-        <select name="end-date" id="end-date" data-mini="true"> 
-          <% (@date..(@date + 2.months)).each do |day| %>
-            <option value= <%= day %>>  
-              <% if day == Date.current %>
-                Today 
-              <% elsif day == Date.current + 1.day %>
-                Tomorrow
-              <% else %>
-                <%= day.strftime("%a %d %B, %Y") %> 
-              <% end %>
-            </option>
-          <% end %>
-        </select>
+        <!-- <fieldset> -->
+        <label for="start-date">Start time:</label>
+          <select name="start_date" id="start-date" data-mini="true"> 
+            <% (@date..(@date + 2.months)).each do |day| %>
+              <option value= <%= day %>>  
+                <% if day == Date.current %>
+                  Today 
+                <% elsif day == Date.current + 1.day %>
+                  Tomorrow
+                <% else %>
+                  <%= day.strftime("%a %d %B, %Y") %> 
+                <% end %>
+              </option>
+            <% end %>
+          </select>
+
+          <%= select_tag "start_time", options_for_select(@times, :selected => time_to_next_quarter_hour(@time.at(Time.now).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+
         
+          <label for="end-date">End time:</label>
+          <select name="end_date" id="end-date" data-mini="true"> 
+            <% (@date..(@date + 2.months)).each do |day| %>
+              <option value= <%= day %>>  
+                <% if day == Date.current %>
+                  Today 
+                <% elsif day == Date.current + 1.day %>
+                  Tomorrow
+                <% else %>
+                  <%= day.strftime("%a %d %B, %Y") %> 
+                <% end %>
+              </option>
+            <% end %>
+          </select>
+          
 
-        <%= select_tag "end-time", options_for_select(@times, :selected => time_to_next_quarter_hour((@time.at(Time.now + 15.minutes)).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+          <%= select_tag "end_time", options_for_select(@times, :selected => time_to_next_quarter_hour((@time.at(Time.now + 15.minutes)).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
 
-    <%= link_to "Next", "#two", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+      <%= link_to "Next", "#two", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+    <!-- </fieldset> -->
+    
+    </div>
+    <%= render 'layouts/footer' %> 
   </div>
-  <%= render 'layouts/footer' %> 
-</div>
 
-<div data-role="page" id="two">
-  <%= render 'layouts/header' %>
-  <div data-role="content">
-     <label for="select-native-s">Select Vehicle</label>
-      <select name="select-native-s" id="select-native-s">
-        <% @vehicle_array.each do |vehicle| %>
-          <option value= <%= vehicle[:id] %>><%= vehicle[:descr] %></option>
+  <div data-role="fieldcontain" id="two">
+    <%= render 'layouts/header' %>
+    <div data-role="content">
+       <label for="select-native-s">Select Vehicle</label>
+        <select name="vehicles" id="vehicles">
+          <% @vehicle_array.each do |vehicle| %>
+            <option value= <%= vehicle[:id] %>><%= vehicle[:descr] %></option>
+          <% end %>
+        </select>
+     <!-- <fieldset data-role="controlgroup"> -->
+        <legend>Amenities</legend>
+        <% @amenities.each do |amenity| %> 
+        <input type="checkbox" name="amenity[]" id="<%= amenity[:name] %>" value="<%= amenity[:name] %>">
+        <label for="<%= amenity[:name] %>"><%= amenity[:description] %></label>
         <% end %>
-      </select>
-    <fieldset data-role="controlgroup">
-      <legend>Amenities</legend>
-      <% @amenities.each do |amenity| %> 
-      <input type="checkbox" name="<%= amenity[:name] %>" id="<%= amenity[:name] %>">
-      <label for="<%= amenity[:name] %>"><%= amenity[:description] %></label>
-      <% end %>
-    </fieldset>
-    <%= link_to "Back", "#one", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
-    <%= link_to "Next", "#three", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+      <!-- </fieldset> -->
+      <%= link_to "Back", "#one", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+      <%= link_to "Next", "#three", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+    </div>
+    <%= render 'layouts/footer' %> 
   </div>
-  <%= render 'layouts/footer' %> 
-</div>
 
-<div data-role="page" id="three">
-  <%= render 'layouts/header' %>
-  <div data-role="content">
-    <p>Page 3</p>
+  <div data-role="fieldcontain" id="three">
+    <%= render 'layouts/header' %>
+    <div data-role="content">
+      <p>Location</p>
+      <%= @locations[:description] %>
+      <%= select_tag "location", options_for_select(@location_array), { "data-mini" => "true" } %> 
+      <p id="current_location">coordinates:</p>
+          <script>
+var x=document.getElementById("current_location");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else {x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+function showPosition(position)
+  {
+  x.innerHTML="Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude; 
+  }
 
-    </form>
-    <%= link_to "Back", "#two", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
-    <%= link_to "Next", "#four", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+  getLocation();
+</script>
+
+<script>
+  navigator.geolocation.getCurrentPosition(showPosition);
+  function showPosition(position)
+  {
+     "<p> hello" position.coords.latitude + 
+  "<br>hello2: " + position.coords.longitude;
+  }
+  </script>
+      
+      <%= link_to "Back", "#two", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+      <%= submit_tag 'search', { "data-inline" => "true" } %>
+      <!-- <%= link_to "Next", "#four", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> -->
+    
+    </div>
+    <%= render 'layouts/footer' %> 
   </div>
-  <%= render 'layouts/footer' %> 
-</div>
+<% end %>

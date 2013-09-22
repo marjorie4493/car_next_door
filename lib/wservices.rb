@@ -3,7 +3,7 @@ require 'net/http'
 module Wservices
   # Returns a list of available times for availability for the specified stack.
   def availability_for_stack(stack_id, start_time, end_time)
-    method = "availabilityForStack&stackId=" + stack_id + "&startTime=" + start_time + "&endTime=" + end_time
+    method = "availabilityForStack&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
@@ -15,36 +15,36 @@ module Wservices
 
   # Returns an estimate structure for the given time frame, stack and driver.
   def trip_estimate(stack_id, start_time, end_time)
-    method = "tripEstimate&stackId=" + stack_id + "&startTime=" + start_time + "&endTime=" + end_time
+    method = "tripEstimate&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
   def trip_estimate_and_optional_adjustments(stack_id, start_time, end_time)
-    method = "tripEstimateAndOptionalAdjustments&stackId=" + stack_id + "&startTime=" + start_time + "&endTime=" + end_time
+    method = "tripEstimateAndOptionalAdjustments&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
   # Returns an estimate structure for the given reservation for the given      # timeframe, stack and driver.
   def trip_estimate_for_reservation_with_id(reservation_id, stack_id, start_time, end_time)
-    method = "tripEstimateForReservationWithId&reservationId=" + reservation_id + "&stackId=" + stack_id + "&startTime=" + start_time + "&endTime=" + end_time
+    method = "tripEstimateForReservationWithId&reservationId=" + reservation_id.to_s + "&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s 
     post_request(method)
   end
 
   # Reserves a vehicle in a stack for this member at the specified time. Will # return true if all was successful or an exception if not.
   def make_reservation(stack_id, start_time, end_time, memo)
-    method = "makeReservation&stackId=" + stack_id + "&startTime=" + start_time + "&endTime=" + end_time + "&memo=" + memo
+    method = "makeReservation&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s + "&memo=" + memo
     post_request(method)
   end
 
   # Reserves a vehicle in a stack for this member at the specified time.       # Will return the id of the reservation if all was sucessful or exception   # if not.
   def make_reservation_get_id(stack_id, start_time, end_time, memo)
-    method = "makeReservationGetId&stackId=" + stack_id + "&startTime=" + start_time + "&memo=" + memo
+    method = "makeReservationGetId&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s + "&memo=" + memo
     post_request(method)
   end
 
   # Reserves a vehicle in a stack for this member at the specified time. Will  # return the reservation if all was successful, other exception. 
   def make_reservation_get_reservation(stack_id, start_time, end_time, memo)
-    method = "makeReservationGetReservation&stackId=" + stack_id + "&startTime=" + start_time + "&endTime=" + end_time + "&memo=" + memo
+    method = "makeReservationGetReservation&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s + "&memo=" + memo
     post_request(method)
   end
 
@@ -56,7 +56,7 @@ module Wservices
 
   # Reserves a vehicle in a stack for this member at the specified time,      # assigning any optional adjustments by id that were specified.
   def make_reservation_with_optional_adjustment_ids_get_ids(stack_id, start_time, end_time, optional_adjustment_ids, memo)
-    method = "makeReservationWithOptionalAdjustmentIdsGetIds&stackId=" + stack_id + "&startTime=" + start_time + "&end_time=" + end_time + "optionalAdjustmentIds=" + optional_adjustment_ids + "&memo=" + memo
+    method = "makeReservationWithOptionalAdjustmentIdsGetIds&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&end_time=" + end_time.to_s + "optionalAdjustmentIds=" + optional_adjustment_ids + "&memo=" + memo
     post_request(method)
   end
 
@@ -64,7 +64,7 @@ module Wservices
   # assigning any optional adjustments by id that were specified. Will
   # return the reservation if all was successful.
   def make_reservation_with_optional_adjustment_ids_get_reservation(stack_id, start_time, end_time, optional_adjustment_ids, memo)
-    method = "makeReservationWithOptionalAdjustmentIdsGetReservation&stackId=" + stack_id + "&startTime=" + start_time + "&endTime=" + end_time + "&optionalAdjustmentIds=" + optional_adjustment_ids + "&memo=" + memo
+    method = "makeReservationWithOptionalAdjustmentIdsGetReservation&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s + "&optionalAdjustmentIds=" + optional_adjustment_ids + "&memo=" + memo
     post_request(method)
   end
 
@@ -89,7 +89,7 @@ module Wservices
   # Check if your specified time is acceptable for the start or end time of 
   # a reservation, throws exception if not.
   def check_reservation_date_time(stamp)
-    method = "checkReservationDateTime&stamp=" + stamp
+    method = "checkReservationDateTime&stamp=" + stamp.to_s
     post_request(method)
   end
 
@@ -119,21 +119,21 @@ module Wservices
   # Extends a reservation with the specified ID until the specified date time.
   # Returns true if successful, throws exception if not.
   def extend_reservation_with_id(reservation_id, end_time)
-    method = "extendReservationWithId&reservationId=" + reservation_id + "&endTime=" + end_time
+    method = "extendReservationWithId&reservationId=" + reservation_id.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
   # Extends a reservation with the specified ID until the specified date time.
   # returns reservation on succes, throws exception if not. 
   def extend_reservation_with_id_get_reservation(reservation_id, end_time)
-    method = "extendReservationWithIdGetReservation&=" + reservation_id + "&endTime=" + end_time
+    method = "extendReservationWithIdGetReservation&=" + reservation_id.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
   # Shortens the end time of a reservation with the specified ID until the
   # specified date time. Returns true on success, throws exception if not.
   def early_return_for_reservation_with_id(reservation_id, end_time)
-    method = "earlyReturnForReservationWithId&reservationId=" + reservation_id + "&endTime=" + end_time
+    method = "earlyReturnForReservationWithId&reservationId=" + reservation_id.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
@@ -141,35 +141,35 @@ module Wservices
   # specified date time. Returns reservation on success, throws exception if 
   # not.
   def early_return_for_reservation_with_id_get_reservation(reservation_id, end_time)
-    method = "earlyReturnForReservationWithIdGetReservation&=" + reservation_id + "&endTime=" + end_time
+    method = "earlyReturnForReservationWithIdGetReservation&=" + reservation_id.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
   # Shortens the start time of a reservation with the specified ID until the
   # specified date time. Returns true on success 
   def early_arrive_for_reservation_with_id(reservation_id, start_time)
-    method = "earlyAriveForReservationWithId&=" + reservation_id + "&startTime=" + start_time
+    method = "earlyAriveForReservationWithId&=" + reservation_id.to_s + "&startTime=" + start_time.to_s
   end
 
   # Shortens the start time of a reservation with the specified ID, until the 
   # specified date time. Returns reservation on success, throws exception if
   # not.
   def early_arrive_for_reservation_with_id_get_reservation(reservation_id, start_time)
-    method = "earlyAriveForReservationWithIdGetReservation&reservationId=" + reservation_id + "&startTime=" + start_time
+    method = "earlyAriveForReservationWithIdGetReservation&reservationId=" + reservation_id.to_s + "&startTime=" + start_time.to_s
     post_request(method)
   end
 
   # Edits the reservation times of the reservation with the specified ID, 
   # returns true on success, throws exception if not.
   def edit_reservation_times(reservation_id, start_time, end_time)
-    method = "editReservationTimes&reservationId=" + reservation_id + "&startTime=" + start_time + "&endTime=" + end_time
+    method = "editReservationTimes&reservationId=" + reservation_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
   # Edits the reservation times of the reservation with the specified ID,
   # returns reservation on success, throws exception if not. 
   def edit_reservation_times_get_reservation(reservation_id, start_time, end_time)
-    method = "editReservationTimesGetReservation&reservationId=" + reservation_id + "&startTime=" + start_time + "&endTime=" + end_time
+    method = "editReservationTimesGetReservation&reservationId=" + reservation_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s
     post_request(method)
   end
 
@@ -238,7 +238,7 @@ module Wservices
 
   # Returns a DBEntityStack for the specified Stack ID. 
   def stack_for_id(stack_id, time)
-    method = "stackForId&stackId=" + stack_id + "&time=" + time
+    method = "stackForId&stackId=" + stack_id.to_s + "&time=" + time.to_s
     hash = post_request(method)
     
     stack = {}
@@ -265,9 +265,17 @@ module Wservices
   # Returns an array of driver locations.
   def get_driver_locations
     method = "getDriverLocations"
-    post_request(method)
+    hash = post_request(method)
+    location = {}
+    if !hash["DBDriverLocation"].nil?
+      location[:description]  = hash["DBDriverLocation"][0]["description"][0]
+      location[:latitude]     = hash["DBDriverLocation"][0]["latitude"][0]
+      location[:longitude]    = hash["DBDriverLocation"][0]["longitude"][0]
+      location[:default]      = hash["DBDriverLocation"][0]["default"][0]
+    end
+    location
   end
-
+  #{"DBDriverLocation"=>[{"description"=>["Home"], "latitude"=>["-33.889914"], "longitude"=>["151.190560"], "default"=>["1"]}]}
   # Return the driver's name.
   def get_driver_name
     method = "getDriverName"
@@ -276,13 +284,13 @@ module Wservices
 
   # Cancel a reservation for this user.
   def cancel_reservation_with_id(reservation_id)
-    method = "cancelReservationWithId&reservationId=" + reservation_id
+    method = "cancelReservationWithId&reservationId=" + reservation_id.to_s
     post_request(method)
   end
 
   # Cancel a reservation for this user, return reservation.
   def cancel_reservation_with_id_get_reservation(reservation_id)
-    method = "cancelReservationWithIdGetReservation&reservationId=" + reservation_id
+    method = "cancelReservationWithIdGetReservation&reservationId=" + reservation_id.to_s
     post_request(method)
   end
 
@@ -296,28 +304,28 @@ module Wservices
   def get_drivers_interesting_things
     method = "getDriversIntrestingThings"
     hash = post_request(method)
-	drivers_things = {}
+	  drivers_things = {}
 	
-	#breaks down things for the drivers configuration results
-	if !hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0].nil?
-		drivers_things_config_result = hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0]
+  	#breaks down things for the drivers configuration results
+  	if !hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0].nil?
+  		drivers_things_config_result = hash["WSDriversIntrestingThings"][0]["WSGetConfigurationResult"][0]
 
-		drivers_things[:time_zone] = drivers_things_config_result["timeZone"][0]
-		drivers_things[:trip_time_resolution] = drivers_things_config_result["tripTimeResolution"][0]
-		drivers_things[:driver_name] = drivers_things_config_result["driverName"][0]
-		drivers_things[:driver_language_locale] = drivers_things_config_result["driverLanguageLocale"][0]
-    end
-	
-	if !hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0].nil?
-		drivers_things_driver_locations = hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0]
+  		drivers_things[:time_zone] = drivers_things_config_result["timeZone"][0]
+  		drivers_things[:trip_time_resolution] = drivers_things_config_result["tripTimeResolution"][0]
+  		drivers_things[:driver_name] = drivers_things_config_result["driverName"][0]
+  		drivers_things[:driver_language_locale] = drivers_things_config_result["driverLanguageLocale"][0]
+      end
+  	
+  	if !hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0].nil?
+  		drivers_things_driver_locations = hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0]
 
-		drivers_things[:description] = drivers_things_driver_locations["description"][0]
-		drivers_things[:latitude] = drivers_things_driver_locations["latitude"][0]
-		drivers_things[:longitude] = drivers_things_driver_locations["longitude"][0]
-		drivers_things[:default] = drivers_things_driver_locations["default"][0]
+  		drivers_things[:description] = drivers_things_driver_locations["description"][0]
+  		drivers_things[:latitude] = drivers_things_driver_locations["latitude"][0]
+  		drivers_things[:longitude] = drivers_things_driver_locations["longitude"][0]
+  		drivers_things[:default] = drivers_things_driver_locations["default"][0]
+      end
+  	drivers_things
     end
-	drivers_things
-  end
 
   # Returns future and current reservations.
   def get_current_and_future_reservations
@@ -343,13 +351,13 @@ module Wservices
       future = hash["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"]
       future_array = []
       future.each { |x| 
-        future_array.push( { :start_time => Time.zone.at(x["startStamp"][0].to_i),
-                             :end_time => Time.zone.at(x["endStamp"][0].to_i),
-                             :id => x["id"][0],
-                             :estimate => x["estimate"][0],
-                             :location => x["DBEntityStack"][0]["lotDescription"][0],
-                             :status => x["status"][0],
-                             :vehicle_id => x["DBEntityStack"][0]["DBEntityVehicleType"][0]["id"][0] } ) 
+        future_array.push( { :start_time  => Time.zone.at(x["startStamp"][0].to_i),
+                             :end_time    => Time.zone.at(x["endStamp"][0].to_i),
+                             :id          => x["id"][0],
+                             :estimate    => x["estimate"][0],
+                             :location    => x["DBEntityStack"][0]["lotDescription"][0],
+                             :status      => x["status"][0],
+                             :vehicle_id  => x["DBEntityStack"][0]["DBEntityVehicleType"][0]["id"][0] } ) 
       }
       result[:future] = future_array
     end
@@ -370,14 +378,14 @@ module Wservices
 
   # Returns an array of messages for the specified reservation.
   def get_reservation_messages(reservation_id)
-    method = "getReservationMessages&reservationId=" + reservation_id
+    method = "getReservationMessages&reservationId=" + reservation_id.to_s
     post_request(method)
   end
 
   # Returns an array of messages for the specified stack. These 
   # messages include stack, vehicle and lot messages.
   def get_stack_messages(stack_id, start_time)
-    method = "getStackMessages&stackId=" + stack_id + "&startTime=" + start_time
+    method = "getStackMessages&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s
     post_request(method)
   end
 
@@ -402,7 +410,7 @@ module Wservices
 
   # Submit a problem for this driver.
   def submit_problem(problem_type, reservation_id, message)
-    method = "submitProblem&problemType=" + problem_type + "&reservationId=" + reservation_id + "&message=" + message
+    method = "submitProblem&problemType=" + problem_type + "&reservationId=" + reservation_id.to_s + "&message=" + message
     post_request(method)
   end
 
@@ -414,7 +422,7 @@ module Wservices
 
   # Sets the end time and end odo or a trip id.
   def end_trip_by_id(trip_id, end_odo)
-    method = "endTripById&tripId=" + trip_id + "&endOdo=" + end_odo
+    method = "endTripById&tripId=" + trip_id.to_s + "&endOdo=" + end_odo.to_s
     post_request(end_odo)
   end
 
@@ -433,7 +441,7 @@ module Wservices
 
   # Mark message as read.
   def mark_read_once_message_as_read(message_id)
-    method = "markReadOnceMessageAsRead&messageId=" + message_id
+    method = "markReadOnceMessageAsRead&messageId=" + message_id.to_s
     post_request(method)
   end
 
@@ -465,17 +473,5 @@ module Wservices
 
     response = http.request(request)
     hash = XmlSimple.xml_in(response.body, { 'KeyAttr' => 'name'})
-    #hash = Hash.from_xml response.body
   end
-
-  def post_request3(method)
-  time =  Time.now.to_i.to_s
-  hash_method = method.split('&').first
-  username = cookies.signed[:username].to_s
-  password = cookies.signed[:pwd]
-  hash = Digest::SHA1.hexdigest(password + time + hash_method)
-  http = Curl::Easy::http_post("https://reserve.carnextdoor.com.au/webservices/index.php/WSUser/WSRest?action=" + method + "&user=" + username + "&hash=" + hash + "&time=" + time + "&billcode=mobile")
-  hash = XmlSimple.xml_in(http.body_str, { 'KeyAttr' => 'name'})
-  end
-
 end

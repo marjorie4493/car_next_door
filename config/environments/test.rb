@@ -33,4 +33,8 @@ CarNextDoor::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+  
+  # Logging Config dependency
+  require File.expand_path("#{Rails.root}/config/logger.rb")
+  
 end
