@@ -38,8 +38,8 @@ class ApplicationController < ActionController::Base
 
 	  if root.xpath("/methodResponse").text  == "1"
 	  	true
-	  	logger = Log4r::Logger['login']
-	  	logger.info ('user ' + username + ' has successfully logged in at :' + time + ".")
+	  	#logger = Log4r::Logger['login']
+	  	#logger.info ('user ' + username + ' has successfully logged in at :' + time + ".")
 	  else
 	  	false
 	  end
