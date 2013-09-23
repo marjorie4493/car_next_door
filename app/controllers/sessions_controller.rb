@@ -7,8 +7,7 @@ class SessionsController < ApplicationController
       password_hash = Digest::SHA1.hexdigest(params[:session][:password])
 			create_cookies(params[:session][:username], Digest::SHA1.hexdigest(params[:session][:password]))
 	 		redirect_to reservation_path
-	 	else
-      flash[:error] = "Invalid username/password"  
+	 	else  
 	 		redirect_to root_path
 	 	end
 	end

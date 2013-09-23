@@ -18,7 +18,7 @@
         <h4>Future Reservations</h4>
         <ul data-role="listview">
         <% @future.each do |future| %>
-            <li><%= link_to future[:id] + " - " + " " + future[:start_time].strftime("%l:%M%P %b %d") + " to " + future[:end_time].strftime("%l:%M%P %b %d"), reservation_view_path(:id => future[:id]), { "data-transition" => "slide", "data-prefetch" => "true", "data-ajax" => "false" } %>
+            <li><%= link_to future[:id] + " - " + " " + future[:start_time].strftime("%l:%M%P %b %d") + " to " + future[:end_time].strftime("%l:%M%P %b %d"), reservation_view_path(:id => future[:id]), { "data-transition" => "slide", "data-ajax" => "false" } %>
             </li>
         <% end %>
         </ul>

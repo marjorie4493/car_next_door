@@ -183,7 +183,13 @@ class ReservationsController < ApplicationController
     @end_date_time = Time.new(end_date.year, end_date.month, end_date.day, end_time.hour, end_time.min).to_i
     @vehicles = params[:vehicles]
     @amenities = params[:amenity]
-    #@start_stamp = (@start_date.to_time + @start_time.to_time).to_i
+  end
+
+  def book
+    @start_time = params[:start_date_time]
+    @end_time = params[:end_date_time]
+    id = make_reservation_get_id(56, @start_time, @end_time, '')
+    redirect_to reservation_view_path(:id => id)
   end
 
 	private

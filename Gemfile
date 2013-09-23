@@ -81,7 +81,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-# Gem for logger
-gem 'log4r'
-

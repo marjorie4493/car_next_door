@@ -9,6 +9,11 @@
     <%= @amenities %>
     <%= @start_date_time %>
     <p> Make reservation:</p>
+    <%= @res %>
+    <%= form_tag('/book', method: 'post') %>
+      <%= hidden_field_tag 'start_date_time',  @start_date_time %>
+      <%= hidden_field_tag 'end_date_time',  @end_date_time %>
+    <%= submit_tag 'Book' %>
 
   </div>
   <%= render 'layouts/footer' %>

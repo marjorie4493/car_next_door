@@ -74555,3 +74555,124 @@ Processing by ReservationsController#index as HTML
   Rendered layouts/_footer.html.erb (0.0ms)
   Rendered reservations/index.html.erb within layouts/application (31.0ms)
 Completed 200 OK in 4513ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 5067ms (Views: 313.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/new.html.erb within layouts/application (98.0ms)
+Completed 200 OK in 10214ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YzDlJW3YFgbLd32xOoQOdUvaQrvHUniQ9VCcyM4fnKI=", "start_date"=>"2013-09-23", "start_time"=>"11:00 AM", "end_date"=>"2013-09-23", "end_time"=>"12:30 PM", "vehicles"=>"1", "location"=>"Home", "commit"=>"search"}
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/search.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#book as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YzDlJW3YFgbLd32xOoQOdUvaQrvHUniQ9VCcyM4fnKI=", "start_date_time"=>"1379898000", "end_date_time"=>"1379903400", "commit"=>"Book"}
+Redirected to http://localhost:3000/reservation/view?id%5Bfault%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstruct%5D%5B%5D%5Bmember%5D%5B%5D%5Bname%5D%5B%5D=faultCode&id%5Bfault%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstruct%5D%5B%5D%5Bmember%5D%5B%5D%5Bvalue%5D%5B%5D%5Bint%5D%5B%5D=9008&id%5Bfault%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstruct%5D%5B%5D%5Bmember%5D%5B%5D%5Bname%5D%5B%5D=faultString&id%5Bfault%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstruct%5D%5B%5D%5Bmember%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstring%5D%5B%5D=You+can+only+make+one+reservation+during+a+given+time+period.
+Completed 302 Found in 2233ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>{"fault"=>[{"value"=>[{"struct"=>[{"member"=>[{"name"=>["faultCode", "faultString"], "value"=>[{"int"=>["9008"], "string"=>["You can only make one reservation during a given time period."]}]}]}]}]}]}}
+Completed 500 Internal Server Error in 2ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (116.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (155.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 8796ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YzDlJW3YFgbLd32xOoQOdUvaQrvHUniQ9VCcyM4fnKI=", "start_date"=>"2013-09-23", "start_time"=>"11:30 PM", "end_date"=>"2013-09-24", "end_time"=>"01:00 AM", "vehicles"=>"1", "location"=>"Home", "commit"=>"search"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/search.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#book as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YzDlJW3YFgbLd32xOoQOdUvaQrvHUniQ9VCcyM4fnKI=", "start_date_time"=>"1379943000", "end_date_time"=>"1379948400", "commit"=>"Book"}
+Redirected to http://localhost:3000/reservation/view?id%5Bfault%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstruct%5D%5B%5D%5Bmember%5D%5B%5D%5Bname%5D%5B%5D=faultCode&id%5Bfault%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstruct%5D%5B%5D%5Bmember%5D%5B%5D%5Bvalue%5D%5B%5D%5Bint%5D%5B%5D=9008&id%5Bfault%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstruct%5D%5B%5D%5Bmember%5D%5B%5D%5Bname%5D%5B%5D=faultString&id%5Bfault%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstruct%5D%5B%5D%5Bmember%5D%5B%5D%5Bvalue%5D%5B%5D%5Bstring%5D%5B%5D=You+can+only+make+one+reservation+during+a+given+time+period.
+Completed 302 Found in 2315ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>{"fault"=>[{"value"=>[{"struct"=>[{"member"=>[{"name"=>["faultCode", "faultString"], "value"=>[{"int"=>["9008"], "string"=>["You can only make one reservation during a given time period."]}]}]}]}]}]}}
+Completed 500 Internal Server Error in 2ms
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 4492ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 4450ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#new as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 8682ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YzDlJW3YFgbLd32xOoQOdUvaQrvHUniQ9VCcyM4fnKI=", "start_date"=>"2013-10-09", "start_time"=>"11:00 AM", "end_date"=>"2013-10-09", "end_time"=>"01:45 PM", "vehicles"=>"1", "location"=>"Home", "commit"=>"search"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/search.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#book as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YzDlJW3YFgbLd32xOoQOdUvaQrvHUniQ9VCcyM4fnKI=", "start_date_time"=>"1381276800", "end_date_time"=>"1381286700", "commit"=>"Book"}
+Redirected to http://localhost:3000/reservation/view?id=9890
+Completed 302 Found in 4097ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9890"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/view.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 8343ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"9890"}
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered reservations/edit.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 4255ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 5645ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 4731ms (Views: 48.0ms | ActiveRecord: 0.0ms)
