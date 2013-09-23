@@ -77,8 +77,5 @@ CarNextDoor::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-
-  # Logging Config dependency
-  require File.expand_path("#{Rails.root}/config/logger.rb")
   
 end
