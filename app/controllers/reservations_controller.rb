@@ -23,7 +23,6 @@ class ReservationsController < ApplicationController
     unless reservation_with_id(params[:id]).nil?
       @reservation = reservation_with_id(params[:id])
       # for showing on map, this returns a latitude and longitude which can be used for mapping
-
       @stack = stack_for_id(@reservation[:stack_id], @reservation[:start_time])
       @view = get_driver_messages
     end
@@ -49,6 +48,11 @@ class ReservationsController < ApplicationController
     @times = Array.new(24.hours / 15.minutes) do |i|
       (Time.now.midnight + (i*15.minutes)).strftime("%I:%M %p")
     end
+  end
+  
+  def cancel
+    cancel_reservation_with_id(params[:id])
+    redirect_to reservation_confirm_path
   end
 
   def edit
@@ -92,7 +96,6 @@ class ReservationsController < ApplicationController
   end
 
  end
-
   
   # Extends a current reservation
   def extend
@@ -112,7 +115,7 @@ class ReservationsController < ApplicationController
     @date = end_date
     end
     @times = Array.new(24.hours / 15.minutes) do |i|
-      (@end_time +((i+1)*15.minutes)).strftime("%I:%M %p")
+      (Time.now.midnight + (i*15.minutes)).strftime("%I:%M %p")
     end
   end
   
@@ -151,7 +154,7 @@ class ReservationsController < ApplicationController
     end
     
     @times = Array.new(24.hours / 15.minutes) do |i|
-      (time_to_next_quarter_hour(Time.now + i*15.minutes)).strftime("%I:%M %p")
+      (Time.now.midnight + (i*15.minutes)).strftime("%I:%M %p")
     end
   end
   
@@ -174,21 +177,27 @@ class ReservationsController < ApplicationController
 
   def search
     if !params[:start_date].nil?
-      start_date = DateTime.strptime(params[:start_date], "%Y-%m-%d")
+      @start_date = params[:start_date]
     end
+    @start_time = params[:start_time]
+    @end_date = params[:end_date]
+    @end_time = params[:end_time]
+    @vehicles = params[:vehicles]
+    @amenities = params[:amenity]
+  end
+
+  def cancel
+    cancel_reservation_with_id(params[:id])
+    redirect_to reservation_confirm_path
+  end
+  def book
+    start_date = DateTime.strptime(params[:start_date], "%Y-%m-%d")
     start_time = DateTime.strptime(params[:start_time], "%I:%M %p")
     end_date = DateTime.strptime(params[:end_date], "%Y-%m-%d")
     end_time = DateTime.strptime(params[:end_time], "%I:%M %p")
     @start_date_time = Time.new(start_date.year, start_date.month, start_date.day, start_time.hour, start_time.min).to_i
     @end_date_time = Time.new(end_date.year, end_date.month, end_date.day, end_time.hour, end_time.min).to_i
-    @vehicles = params[:vehicles]
-    @amenities = params[:amenity]
-  end
-
-  def book
-    @start_time = params[:start_date_time]
-    @end_time = params[:end_date_time]
-    id = make_reservation_get_id(56, @start_time, @end_time, '')
+    id = make_reservation_get_id(56, @start_date_time, @end_date_time, '')
     redirect_to reservation_view_path(:id => id)
   end
 

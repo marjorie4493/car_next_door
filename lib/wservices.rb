@@ -245,6 +245,8 @@ module Wservices
     if !hash["DBEntityStack"].nil?
       stack_entity = hash["DBEntityStack"][0]
       stack[:descr] = stack_entity["DBEntityVehicleType"][0]["descr"][0]
+	  stack[:image] = stack_entity["DBEntityVehicleType"][0]["thumbDest"][0]
+	  stack[:id] = stack_entity["DBEntityVehicleType"][0]["id"][0]
       stack[:podFee] = stack_entity["podFee"][0]
       stack[:s_descr] = stack_entity["descr"][0]
       stack[:locationDescription] = stack_entity["locationDescription"][0]
@@ -313,9 +315,84 @@ module Wservices
   		drivers_things[:time_zone] = drivers_things_config_result["timeZone"][0]
   		drivers_things[:trip_time_resolution] = drivers_things_config_result["tripTimeResolution"][0]
   		drivers_things[:driver_name] = drivers_things_config_result["driverName"][0]
+      drivers_things[:other_account_type] = drivers_things_config_result["otherAccountType"][0]
+      drivers_things[:max_reservation_memo_length] = drivers_things_config_result["maxReservationMemoLength"][0]
+      drivers_things[:extra_field_is_job_code] = drivers_things_config_result["extraFieldIsJobCode"][0]
   		drivers_things[:driver_language_locale] = drivers_things_config_result["driverLanguageLocale"][0]
       end
-  	
+
+    if !hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0].nil?
+      drivers_things_driver_details = hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]
+      
+      drivers_things[:full_name] = drivers_things_driver_details["fullName"][0]
+      drivers_things[:is_main_driver] = drivers_things_driver_details["isMainDriver"][0]
+      drivers_things[:driver_status] = drivers_things_driver_details["status"][0]
+      drivers_things[:key_fob_ID] = drivers_things_driver_details["keyfobID"][0]
+      drivers_things[:login_name] = drivers_things_driver_details["loginName"][0]
+
+    elsif !hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["currentReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0].nil?
+      drivers_things_driver_details = hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["currentReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]
+      
+      drivers_things[:full_name] = drivers_things_driver_details["fullName"][0]
+      drivers_things[:is_main_driver] = drivers_things_driver_details["isMainDriver"][0]
+      drivers_things[:driver_status] = drivers_things_driver_details["status"][0]
+      drivers_things[:key_fob_ID] = drivers_things_driver_details["keyfobID"][0]
+      drivers_things[:login_name] = drivers_things_driver_details["loginName"][0]
+
+      end
+
+    if !hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]["DBEntityMember"][0].nil?
+      drivers_things_member_details = hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]["DBEntityMember"][0]
+      
+      drivers_things[:member_type] = drivers_things_member_details["type"][0]
+      drivers_things[:main_name] = drivers_things_member_details["mainName"][0]
+      drivers_things[:start_date] = drivers_things_member_details["startDate"][0]
+      drivers_things[:member_status] = drivers_things_member_details["status"][0]
+      drivers_things[:billing_exempt] = drivers_things_member_details["billingExempt"][0]
+      drivers_things[:quit_date] = drivers_things_member_details["quitDate"][0]
+      drivers_things[:close_date] = drivers_things_member_details["closeDate"][0]
+      drivers_things[:is_valet] = drivers_things_member_details["isValet"][0]
+      drivers_things[:member_id] = drivers_things_member_details["id"][0]
+      drivers_things[:entity_type] = drivers_things_member_details["entityType"][0]
+      
+    elsif !hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["currentReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]["DBEntityMember"][0].nil?
+      drivers_things_member_details = hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]["DBEntityMember"][0]
+      
+      drivers_things[:member_type] = drivers_things_member_details["type"][0]
+      drivers_things[:main_name] = drivers_things_member_details["mainName"][0]
+      drivers_things[:start_date] = drivers_things_member_details["startDate"][0]
+      drivers_things[:member_status] = drivers_things_member_details["status"][0]
+      drivers_things[:billing_exempt] = drivers_things_member_details["billingExempt"][0]
+      drivers_things[:quit_date] = drivers_things_member_details["quitDate"][0]
+      drivers_things[:close_date] = drivers_things_member_details["closeDate"][0]
+      drivers_things[:is_valet] = drivers_things_member_details["isValet"][0]
+      drivers_things[:member_id] = drivers_things_member_details["id"][0]
+      drivers_things[:entity_type] = drivers_things_member_details["enitityType"][0]
+
+      end
+
+    #Member Type Details
+    if !hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]["DBEntityMember"][0]["DBEntityMemberType"][0].nil?
+      drivers_things_member_type_details = hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]["DBEntityMember"][0]["DBEntityMemberType"][0]
+      
+      drivers_things[:member_type_name] = drivers_things_member_type_details["name"][0]
+      drivers_things[:member_type_descr] = drivers_things_member_type_details["descr"][0]
+      drivers_things[:is_Residential] = drivers_things_member_type_details["isResidential"][0]
+      drivers_things[:member_type_ID] = drivers_things_member_type_details["id"][0]
+      drivers_things[:member_entity_type] = drivers_things_member_type_details["entityType"][0]
+    
+    elsif !hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["currentReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]["DBEntityMember"][0]["DBEntityMemberType"][0].nil?
+      drivers_things_member_type_details = hash["WSDriversIntrestingThings"][0]["WSGetCurrentAndFutureReservationsResult"][0]["futureReservations"][0]["DBEntityReservation"][0]["DBEntityDriver"][0]["DBEntityMember"][0]["DBEntityMemberType"][0]
+      
+      drivers_things[:member_type_name] = drivers_things_member_type_details["name"][0]
+      drivers_things[:member_type_descr] = drivers_things_member_type_details["descr"][0]
+      drivers_things[:is_Residential] = drivers_things_member_type_details["isResidential"][0]
+      drivers_things[:member_type_ID] = drivers_things_member_type_details["id"][0]
+      drivers_things[:member_entity_type] = drivers_things_member_type_details["entityType"][0]
+      
+      end
+
+    #Driver Location Details
   	if !hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0].nil?
   		drivers_things_driver_locations = hash["WSDriversIntrestingThings"][0]["driverLocations"][0]["DBDriverLocation"][0]
 
@@ -324,7 +401,7 @@ module Wservices
   		drivers_things[:longitude] = drivers_things_driver_locations["longitude"][0]
   		drivers_things[:default] = drivers_things_driver_locations["default"][0]
       end
-  	drivers_things
+  	drivers_things 
     end
 
   # Returns future and current reservations.
@@ -430,7 +507,25 @@ module Wservices
   def vehicle_by_id(vehicle_id)
     method = "vehicleById&vehicleId=" + vehicle_id.to_s
     hash = post_request(method)
-    #hash["DBEntityVehicle"][0]
+    result = {}
+	
+	  vehicle = {}
+      vehicle[:year] = hash["DBEntityVehicle"][0]["year"][0]
+      vehicle[:colour] = hash["DBEntityVehicle"][0]["colour"][0]
+      vehicle[:plate] = hash["DBEntityVehicle"][0]["plate"][0]
+      vehicle[:make] = hash["DBEntityVehicle"][0]["make"][0]
+      vehicle[:model] = hash["DBEntityVehicle"][0]["model"][0]
+      vehicle[:remark] = hash["DBEntityVehicle"][0]["remark"][0]
+	  result[:info] = vehicle
+    
+	  amenities = hash["DBEntityVehicle"][0]["features"][0]["WSAmenity"]
+      amenities_array = []
+      amenities.each { |x| 
+      amenities_array.push( { :name  => x["name"],
+                                :description => x["description"][0] })
+      }
+      result[:amenities] = amenities_array
+    result
   end
 
   # Get locale of driver.

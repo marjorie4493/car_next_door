@@ -1,4 +1,5 @@
 CarNextDoor::Application.routes.draw do
+  get "cars/index"
   resources :sessions
 
 #get "index_page/index"
@@ -8,6 +9,7 @@ CarNextDoor::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'sessions#new'
   match '/book',                to: 'reservations#book',         via: 'post'
+  match '/reservation/cancel',  to: 'reservations#cancel',       via: 'post'
   match '/reservation',         to: 'reservations#index',        via: 'get'
   match '/reservation/edit',    to: 'reservations#edit',         via: 'get'
   match '/reservation/search',  to: 'reservations#search',       via: 'post'
@@ -18,7 +20,8 @@ CarNextDoor::Application.routes.draw do
   match '/signout',             to: 'sessions#destroy',          via: 'delete'
   match '/reservation/extend',  to: 'reservations#extend',       via: 'get'
   match '/reservation/early',   to: 'reservations#early',        via: 'get'
-  match '/reservation/cancel',  to: 'reservations#cancel',		   via: 'get'
+  match '/reservation/confirm', to: 'reservations#confirm',      via: 'get' 
+  match '/cars',                to: 'cars#index',                via: 'get' 
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

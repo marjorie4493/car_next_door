@@ -79,12 +79,166 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 				<%= @driversThings[:default] %>
 			</div>
 		</div>
-		
-		<!--p>Map As Image</p>
-		<!--img src="https://maps.googleapis.com/maps/api/staticmap?center= <%= @driversThings[:latitude] %> <%= @driversThings[:longitude] %>&amp; zoom=25&amp;size=288x200&amp;markers=-33.889914, 151.190560&amp;sensor=false" width="288" height="200">-->
-
 		<!--p> Map with javascript stuff </p-->	
 		<div id="map_container"></div>
+
+
+		<!--Driver Details-->
+		<h3>Driver Details</h3>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<u>Full Name:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:full_name] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>Is Main Driver:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:is_main_driver] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>Status:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:driver_status] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>key Fob ID:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:key_fob_ID] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Login Name:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:login_name] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Other Account Type</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:other_account_type] %>
+			</div>
+		</div>
+
+		<!--Member Details-->
+		<h3>Member Details</h3>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<u>Member Type:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:member_type] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>Main Name:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:main_name] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>Start Date:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:start_date] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>Member Status:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:member_status] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Billing Exempt:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:billing_exempt] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Quit Date:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:quit_date] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Close Date:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:close_date] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Is Valet:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:is_valet] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Member ID:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:member_id] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Entity Type:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:entity_type] %>
+			</div>
+		</div>
+		
+		<!--Member Type Details-->
+		<h3>Member Type Details</h3>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<u>Member Type Name:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:member_type_name] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>Member Type Description:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:member_type_descr] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>Is Residential:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:is_Residential] %>
+			</div>
+			
+			<div class="ui-block-a">
+				<u>Member Type ID:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:member_type_ID] %>
+			</div>
+			<div class="ui-block-a">
+				<u>Entity Type:</u>
+			</div>
+			<div class="ui-block-b">
+				<%= @driversThings[:member_entity_type] %>	
+			</div>
+		</div>
+		
+		
+		
+		
+			
+		<!--p>Map As Image</p>
+		<!--img src="https://maps.googleapis.com/maps/api/staticmap?center= <%= @driversThings[:latitude] %> <%= @driversThings[:longitude] %>&amp; zoom=25&amp;size=288x200&amp;markers=-33.889914, 151.190560&amp;sensor=false" width="288" height="200">-->
 
 	  </div>
 	  <%= render 'layouts/footer' %> 

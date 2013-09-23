@@ -3,11 +3,10 @@
   <div data-role="content">
     <h2>End Reservation Early</h2>
     <p><%= @reservation[:id] %><br /></p>
-	<p><b>Location: </b><%= @reservation[:location] %><br /></p>
-	<p><%= @reservation[:estimate] %><br /></p>
-
+	  <p><b>Location: </b><%= @reservation[:location] %><br /></p>
+	  <p><%= @reservation[:estimate] %><br /></p>
     <p><b>Current Start Time: </b><%= @start_time_string %></p>
-	<p><b>Current End Time: </b><%= @end_time_string %></p>
+	  <p><b>Current End Time: </b><%= @end_time_string %></p>
 	
 	<%= form_tag reservation_early_path(:id => @reservation[:id]), method: 'get' do %>
     <label for="end-date"><b>New End time: </b></label> 

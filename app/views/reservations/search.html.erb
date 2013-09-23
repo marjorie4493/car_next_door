@@ -11,8 +11,10 @@
     <p> Make reservation:</p>
     <%= @res %>
     <%= form_tag('/book', method: 'post') %>
-      <%= hidden_field_tag 'start_date_time',  @start_date_time %>
-      <%= hidden_field_tag 'end_date_time',  @end_date_time %>
+      <%= hidden_field_tag 'start_date',  @start_date %>
+	  <%= hidden_field_tag 'start_time',  @start_time %>
+      <%= hidden_field_tag 'end_date',  @end_date %>
+	  <%= hidden_field_tag 'end_time',  @end_time %>
     <%= submit_tag 'Book' %>
 
   </div>
