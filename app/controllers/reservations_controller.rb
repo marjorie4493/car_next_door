@@ -22,6 +22,9 @@ class ReservationsController < ApplicationController
   def view
     unless reservation_with_id(params[:id]).nil?
       @reservation = reservation_with_id(params[:id])
+	  Time.zone = get_time_zone
+      @time = Time.zone
+	  
       # for showing on map, this returns a latitude and longitude which can be used for mapping
       @stack = stack_for_id(@reservation[:stack_id], @reservation[:start_time])
       @view = get_driver_messages

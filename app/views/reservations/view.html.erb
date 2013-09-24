@@ -37,8 +37,8 @@
   <% end %>
   <%= link_to "Back", reservation_path, { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %>
     
-  <%@start_time =  Time.at(@reservation[:start_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
-  <%@end_time =  Time.at(@reservation[:end_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
+  <%@start_time =  @time.at(@reservation[:start_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
+  <%@end_time =  @time.at(@reservation[:end_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
 
     <p><b>Name: </b><%= @reservation[:driver] %></p>
     <p><b>Cost: </b><%= @reservation[:estimate] %></p> 
