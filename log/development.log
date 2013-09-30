@@ -76106,3 +76106,33 @@ Processing by UsersController#profile as HTML
   Rendered layouts/_footer.html.erb (1.0ms)
   Rendered users/profile.html.erb within layouts/application (12.0ms)
 Completed 200 OK in 3836ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/index.html.erb within layouts/application (132.0ms)
+Completed 200 OK in 11751ms (Views: 1084.1ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#view as HTML
+  Parameters: {"id"=>"9898"}
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/view.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 10022ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"9898"}
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered reservations/edit.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 3965ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 9725ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 10466ms (Views: 70.0ms | ActiveRecord: 0.0ms)

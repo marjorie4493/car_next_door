@@ -83,7 +83,30 @@ module Wservices
   # Returns a set of past reservations
   def past_reservations
     method = "pastReservations"
-    post_request(method)
+    hash = post_request(method)
+    past_reservations = {}
+    if !hash["DBEntityReservation"].nil?
+
+      past = hash["DBEntityReservation"]
+      past_array = []
+      past.each { |x| 
+        past_array.push(
+           { :start_time  => Time.zone.at(x["startStamp"][0].to_i),
+                             :end_time    => Time.zone.at(x["endStamp"][0].to_i),
+                             :driver => x["DBEntityDriver"][0]["fullName"][0],
+                             :id          => x["id"][0],
+                             :estimate    => x["estimate"][0],
+                             :location => x["DBEntityStack"][0]["locationDescription"][0],
+                             :lot    => x["DBEntityStack"][0]["lotDescription"][0],
+                             :status      => x["status"][0],
+                             :image_url => x["DBEntityStack"][0]["DBEntityVehicleType"][0]["imageDest"][0],
+                             :image_thumb_url => x["DBEntityStack"][0]["DBEntityVehicleType"][0]["thumbDest"][0],
+                             :vehicle_id  => x["DBEntityStack"][0]["DBEntityVehicleType"][0]["id"][0], 
+                             :stack_id => x["DBEntityStack"][0]["id"][0] })}
+    else
+      past_array = nil
+    end
+    past_array
   end
 
   # Check if your specified time is acceptable for the start or end time of 
@@ -110,6 +133,7 @@ module Wservices
       reservation[:image_thumb_url] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["imageDest"][0]
       reservation[:vehicle_id] = reservation_entity["DBEntityStack"][0]["DBEntityVehicleType"][0]["id"][0]
       reservation[:stack_id] = reservation_entity["DBEntityStack"][0]["id"][0]
+      reservation[:status] = reservation_entity["status"][0]
     else
       reservation = nil
     end

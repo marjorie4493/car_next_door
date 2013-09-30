@@ -2,7 +2,7 @@
   <div data-role="footer" data-id="foo1" data-position="fixed">
     <div data-role="navbar">
       <ul>
-        <li><%= link_to "Home", reservation_path, { "data-icon" => "home" , "data-ajax" => "false"} %></li>
+        <li><%= link_to "My Reservations", reservation_path, { "data-icon" => "home" , "data-ajax" => "false"} %></li>
         <li><%= link_to "Reserve", new_path, { "data-icon" => "arrow-r", "data-ajax" => "false", "class" => "new-reservation" } %></li>
 		
 		    <% if cookies.signed[:username] == "970" %>

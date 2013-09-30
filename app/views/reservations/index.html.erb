@@ -5,7 +5,7 @@
       <div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
         <h4>Current Reservation</h4>
         <ul data-role="listview">
-          <li><%= link_to @current[:id] + " - " + @current[:start_time].strftime("%l:%M%P") + " - " + @current[:end_time].strftime("%l:%M%P"), reservation_view_path(:id => @current[:id]), { "data-transition" => "slide", "data-ajax" => "false" }  %>
+          <li><%= link_to @current[:vehicle_id] + " - " + @current[:start_time].strftime("%R %D") + " - " + @current[:end_time].strftime("%R %D"), reservation_view_path(:id => @current[:id]), { "data-transition" => "slide", "data-ajax" => "false" }  %>
           </li>
         </ul>
       </div>
@@ -15,16 +15,29 @@
 
     <% if !@future.nil? %>
       <div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
-        <h4>Future Reservations</h4>
+        <h4>Future Reservations (<%= @future.length%>)</h4>
         <ul data-role="listview">
         <% @future.each do |future| %>
-          <li><%= link_to future[:id] + " - " + " " + future[:start_time].strftime("%l:%M%P %b %d") + " to " + future[:end_time].strftime("%l:%M%P %b %d"), reservation_view_path(:id => future[:id]), { "data-transition" => "slide", "data-ajax" => "false" } %>
+          <li><%= link_to future[:vehicle_id] + " - " + " " + future[:start_time].strftime("%R %D") + " to " + future[:end_time].strftime("%R %D"), reservation_view_path(:id => future[:id]), { "data-transition" => "slide", "data-ajax" => "false" } %>
           </li>
         <% end %>
         </ul>
     </div>
     <% else %>
       <p>You have no future reservations.</p>
+    <% end %>   
+    <% if !@past.nil? %>
+      <div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
+        <h4>Past Reservations (<%= @past.length%>)</h4>
+        <ul data-role="listview">
+        <% @past.each do |past| %>
+            <li><%= link_to past[:vehicle_id] + " - " + " " + past[:start_time].strftime("%R %D") + " to " + past[:end_time].strftime("%R %D")+", "+past[:estimate]+", "+past[:status], reservation_view_path(:id => past[:id]), { "data-transition" => "slide", "data-ajax" => "false" } %>
+            </li>
+        <% end %>
+        </ul>
+    </div>
+    <% else %>
+      <p>You have no past reservations.</p>
     <% end %>     
   </div>
   <%= render 'layouts/footer' %> 

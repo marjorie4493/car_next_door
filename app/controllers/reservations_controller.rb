@@ -17,6 +17,9 @@ class ReservationsController < ApplicationController
     else
       @future = nil
     end
+
+   @past = past_reservations
+
   end
 
   def view
