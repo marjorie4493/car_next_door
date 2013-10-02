@@ -1,6 +1,7 @@
 require 'xmlsimple'
 require 'net/http'
 module Wservices
+#class Wservices
   # Returns a list of available times for availability for the specified stack.
   def availability_for_stack(stack_id, start_time, end_time)
     method = "availabilityForStack&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s
