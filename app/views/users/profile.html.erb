@@ -14,225 +14,231 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 			});
 	</script>
 
-	<div data-role="page" data-url="<%= request.path %>">
+	<div data-role="page" data-url="<%= request.path %>" id ="account">
 	  <%= render 'layouts/header' %>
 	  <div data-role="content">
 		<h2>Profile page</h2>
-		<h3>Basic Information</h3>
-		<div class="ui-grid-a">
-			<div class="ui-block-a">
-				<u>Time Zone:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:time_zone] %> 
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Name:</u> 
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:driver_name] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Trip Time Resolution:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:trip_time_resolution] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Language Locale:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:driver_language_locale] %>
-			</div>
-		</div>
+		<!--div data-role="fieldcontain" id="account"-->
+			<%= link_to "Account", "#account", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+			<%= link_to "Invoices", "#invoices", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+      		<%= link_to "Preferences", "#preferences", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
 		
-		<h3>Driver Location</h3>
-		<div class="ui-grid-a">
-			<div class="ui-block-a">
-				<u>Description:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:description] %>
+			<h3>Basic Information</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<u>Time Zone:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:time_zone] %> 
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Name:</u> 
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:driver_name] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Trip Time Resolution:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:trip_time_resolution] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Language Locale:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:driver_language_locale] %>
+				</div>
 			</div>
 			
-			<div class="ui-block-a">
-				<u>Latitude:</u>
+			<h3>Driver Location</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<u>Description:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:description] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Latitude:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:latitude] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Longitude:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:longitude] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Default:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:default] %>
+				</div>
 			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:latitude] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Longitude:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:longitude] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Default:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:default] %>
-			</div>
-		</div>
-		<!--p> Map with javascript stuff </p-->	
-		<div id="map_container"></div>
+			<!--p> Map with javascript stuff </p-->	
+			<div id="map_container"></div>
 
 
-		<!--Driver Details-->
-		<h3>Driver Details</h3>
-		<div class="ui-grid-a">
-			<div class="ui-block-a">
-				<u>Full Name:</u>
+			<!--Driver Details-->
+			<h3>Driver Details</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<u>Full Name:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:full_name] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Is Main Driver:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:is_main_driver] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Status:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:driver_status] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>key Fob ID:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:key_fob_ID] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Login Name:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:login_name] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Other Account Type</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:other_account_type] %>
+				</div>
 			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:full_name] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Is Main Driver:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:is_main_driver] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Status:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:driver_status] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>key Fob ID:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:key_fob_ID] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Login Name:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:login_name] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Other Account Type</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:other_account_type] %>
-			</div>
-		</div>
 
-		<!--Member Details-->
-		<h3>Member Details</h3>
-		<div class="ui-grid-a">
-			<div class="ui-block-a">
-				<u>Member Type:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:member_type] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Main Name:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:main_name] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Start Date:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:start_date] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Member Status:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:member_status] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Billing Exempt:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:billing_exempt] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Quit Date:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:quit_date] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Close Date:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:close_date] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Is Valet:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:is_valet] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Member ID:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:member_id] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Entity Type:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:entity_type] %>
-			</div>
-		</div>
-		
-		<!--Member Type Details-->
-		<h3>Member Type Details</h3>
-		<div class="ui-grid-a">
-			<div class="ui-block-a">
-				<u>Member Type Name:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:member_type_name] %>
+			<!--Member Details-->
+			<h3>Member Details</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<u>Member Type:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:member_type] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Main Name:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:main_name] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Start Date:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:start_date] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Member Status:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:member_status] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Billing Exempt:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:billing_exempt] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Quit Date:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:quit_date] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Close Date:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:close_date] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Is Valet:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:is_valet] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Member ID:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:member_id] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Entity Type:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:entity_type] %>
+				</div>
 			</div>
 			
-			<div class="ui-block-a">
-				<u>Member Type Description:</u>
+			<!--Member Type Details-->
+			<h3>Member Type Details</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<u>Member Type Name:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:member_type_name] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Member Type Description:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:member_type_descr] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Is Residential:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:is_Residential] %>
+				</div>
+				
+				<div class="ui-block-a">
+					<u>Member Type ID:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:member_type_ID] %>
+				</div>
+				<div class="ui-block-a">
+					<u>Entity Type:</u>
+				</div>
+				<div class="ui-block-b">
+					<%= @driversThings[:member_entity_type] %>	
+				</div>
 			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:member_type_descr] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Is Residential:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:is_Residential] %>
-			</div>
-			
-			<div class="ui-block-a">
-				<u>Member Type ID:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:member_type_ID] %>
-			</div>
-			<div class="ui-block-a">
-				<u>Entity Type:</u>
-			</div>
-			<div class="ui-block-b">
-				<%= @driversThings[:member_entity_type] %>	
-			</div>
-		</div>
-		
+		<!--/div-->
+
 		
 		
 		
@@ -242,4 +248,26 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 
 	  </div>
 	  <%= render 'layouts/footer' %> 
+	</div>
+	<div data-role="fieldcontain" id="invoices">
+		<%= render 'layouts/header' %> 
+		<div data-role="content">
+			<h2>Profile page</h2>
+			<%= link_to "Account", "#account", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+			<%= link_to "Invoices", "#invoices", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+				<%= link_to "Preferences", "#preferences", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+			<h3>Invoices</h3>
+		</div>
+		<%= render 'layouts/footer' %> 
+	</div>
+	<div data-role="fieldcontain" id="preferences">
+		<%= render 'layouts/header' %>
+		<div data-role="content">
+			<h2>Profile page</h2>
+			<%= link_to "Account", "#account", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+			<%= link_to "Invoices", "#invoices", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+				<%= link_to "Preferences", "#preferences", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
+			<h3>Preferences</h3>
+		</div>
+		<%= render 'layouts/footer' %> 
 	</div>

@@ -1,7 +1,24 @@
  <div data-role="page" data-url="<%= request.path %>" data-ajax="false">
   <%= render 'layouts/header' %>
   <div data-role="content">
-    <%= image_tag "car-next-door-logo.png", :width => "100%" %> 
+  
+  <% random = randomise %>
+  <table border="0" align="center">
+    <tr>
+	  <td>
+        <%= image_tag "logo.png", :width => "100%" %> 
+      </td>
+	  <td>
+        <%= image_tag "face" + (random[0].to_s) +".png", :width => "100%" %> 
+      </td>
+	  <td>
+        <%= image_tag "face" + (random[1].to_s) +".png", :width => "100%" %> 
+      </td>
+	  <td>
+        <%= image_tag "face" + (random[2].to_s) +".png" , :width => "100%" %> 
+      </td>
+	</tr>
+  </table>
     <%= form_for(:session, url: sessions_path) do |f| %>
   	 <%= f.text_field :username, placeholder: "Member ID" %> <br />
   	 <%= f.password_field :password, placeholder: "Password" %><br />
