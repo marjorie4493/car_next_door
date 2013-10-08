@@ -24,7 +24,7 @@ describe "Index Page Content" do
 	  else
 		  it { should have_button("Future Reservations") }
 		  it { should_not have_content("You have no future reservations.") }
-	  end
+	  end 
   end
 	
 	describe "for owner" do

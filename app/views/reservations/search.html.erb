@@ -1,4 +1,4 @@
-<div data-role="page">
+<div data-role="page" data-theme="b" data-content-theme="b">
   <%= render 'layouts/header' %>
   <div data-role="content">
     <%= @start_date %>
@@ -8,6 +8,7 @@
     <%= @vehicles %>
     <%= @amenities %>
     <%= @start_date_time %>
+    <%= @check_avail %>
     <p> Make reservation:</p>
     <%= @res %>
     <%= form_tag('/book', method: 'post') %>

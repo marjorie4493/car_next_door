@@ -1,0 +1,24 @@
+require 'spec_helper'
+
+describe ReservationsController do
+#   before :each do
+#     @ws = mock_model(Wservices)
+#     @ws.stub!(:post_request)
+#   end
+
+#   describe "@amenity" do
+#     it "@amenity" do
+#       @ws = Wservices.new
+#       @amenity = @ws.stub!(:message).with(hash_including(:name => 'b'))
+#       #cookies = mock('cookies')
+#       #controller.stub(:cookies).and_return( {:name => '970', :pwd => 'usyd'})
+#       @amenity.should_receive(:message).with(hash_including(:name => 'b'))
+#     end
+#   end
+end
+  # @page = mock_model(Page)
+  # @page.stub!(:path)
+  # @page.stub!(:find_by_id)
+  # @page_type = mock_model(PageType)
+  # @page_type.stub!(:name)
+  # @page.stub!(:page_type).and_return(@page_type)

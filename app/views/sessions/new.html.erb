@@ -1,8 +1,8 @@
- <div data-role="page" data-url="<%= request.path %>" data-ajax="false">
+ <div data-role="page" data-url="<%= request.path %>" data-ajax="false" data-theme="a" data-content-theme="a">
   <%= render 'layouts/header' %>
   <div data-role="content">
   
-  <% random = randomise %>
+  <% random = randomise %><br><br><br>
   <table border="0" align="center">
     <tr>
 	  <td>
@@ -19,10 +19,15 @@
       </td>
 	</tr>
   </table>
+
     <%= form_for(:session, url: sessions_path) do |f| %>
-  	 <%= f.text_field :username, placeholder: "Member ID" %> <br />
-  	 <%= f.password_field :password, placeholder: "Password" %><br />
-  	 <%=  f.submit "Login" %>
+    	<%= f.text_field :username, placeholder: "Member ID"%>
+    	<%= f.password_field :password, placeholder: "Password"%>
+    	<%=  f.submit "LOGIN", "data-content-theme" => "a" %>
     <% end %>
+    <br>
+    <div class="centerLink">
+      <%= link_to "Contact Us", contact_path, { "data-content-theme" => "a", "data-theme" => "a"} %>
+    </div>
   </div>
 </div>

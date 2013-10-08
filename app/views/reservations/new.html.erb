@@ -1,76 +1,54 @@
 <%= form_tag('/reservation/search', method: 'post') do %>
-  <div data-role="page" id="one">
+  <div data-role="page" id="one" data-theme="b" data-content-theme="b">
     <%= render 'layouts/header' %>
     <div data-role="content">
       <h1>New Reservation</h1>
-        <label for="start-date">Start time:</label>
-          <select name="start_date" id="start-date" data-mini="true"> 
-            <% (@date..(@date + 2.months)).each do |day| %>
-              <option value= <%= day %>>  
-                <% if day == Date.current %>
-                  Today 
-                <% elsif day == Date.current + 1.day %>
-                  Tomorrow
-                <% else %>
-                  <%= day.strftime("%a %d %B, %Y") %> 
-                <% end %>
-              </option>
-            <% end %>
-          </select>
-
-          <%= select_tag "start_time", options_for_select(@times, :selected => time_to_next_quarter_hour(@time.at(Time.now).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
-        
-          <label for="end-date">End time:</label>
-          <select name="end_date" id="end-date" data-mini="true"> 
-            <% (@date..(@date + 2.months)).each do |day| %>
-              <option value= <%= day %>>  
-                <% if day == Date.current %>
-                  Today 
-                <% elsif day == Date.current + 1.day %>
-                  Tomorrow
-                <% else %>
-                  <%= day.strftime("%a %d %B, %Y") %> 
-                <% end %>
-              </option>
-            <% end %>
-          </select>
-          
-        <%= select_tag "end_time", options_for_select(@times, :selected => time_to_next_quarter_hour((@time.at(Time.now + 1.hour)).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
-
-        <%= link_to "Next", "#two", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %>
-    
-    </div>
-    <%= render 'layouts/footer' %> 
-  </div>
-
-  <div data-role="fieldcontain" id="two">
-    <%= render 'layouts/header' %>
-    <div data-role="content">
-       <label for="select-native-s">Select Vehicle</label>
-        <select name="vehicles" id="vehicles">
-          <% @vehicle_array.each do |vehicle| %>
-            <option value= <%= vehicle[:id] %>><%= vehicle[:descr] %></option>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Start time:</legend>
+        <select name="start_date" id="start-date" data-mini="true"> 
+          <% (@date..(@date + 2.months)).each do |day| %>
+            <option value= <%= day %>>  
+              <% if day == Date.current %>
+                Today 
+              <% elsif day == Date.current + 1.day %>
+                Tomorrow
+              <% else %>
+                <%= day.strftime("%a %d %B, %Y") %> 
+              <% end %>
+            </option>
           <% end %>
         </select>
-     
-        <legend>Amenities</legend>
-        <% @amenities.each do |amenity| %> 
-          <input type="checkbox" name="amenity[]" id="<%= amenity[:name] %>" value="<%= amenity[:name] %>">
-          <label for="<%= amenity[:name] %>"><%= amenity[:description] %></label>
-        <% end %>
-     
-      <%= link_to "Back", "#one", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
-      <%= link_to "Next", "#three", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> 
-    </div>
-    <%= render 'layouts/footer' %> 
-  </div>
 
-  <div data-role="fieldcontain" id="three">
-    <%= render 'layouts/header' %>
-    <div data-role="content">
+        <%= select_tag "start_time", options_for_select(@times, :selected => time_to_next_quarter_hour(@time.at(Time.now).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+      </fieldset>
+
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>End time:</legend>
+        <select name="end_date" id="end-date" data-mini="true"> 
+          <% (@date..(@date + 2.months)).each do |day| %>
+            <option value= <%= day %>>  
+              <% if day == Date.current %>
+                Today 
+              <% elsif day == Date.current + 1.day %>
+                Tomorrow
+              <% else %>
+                <%= day.strftime("%a %d %B, %Y") %> 
+              <% end %>
+            </option>
+          <% end %>
+        </select>
+
+        <%= select_tag "end_time", options_for_select(@times, :selected => time_to_next_quarter_hour((@time.at(Time.now + 1.hour)).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+
+      </fieldset>
+     
+     
+  
+
+
       <p>Location</p>
       <%= @locations[:description] %>
-      <%= select_tag "location", options_for_select(@location_array), { "data-mini" => "true" } %> 
+      <%= select_tag "location", options_for_select(@location_array), { "data-mini" => "true" ,"data-inline"=>"true"} %> 
       <p id="current_location">coordinates:</p>
       <script>
         var x=document.getElementById("current_location");
@@ -87,10 +65,39 @@
         getLocation();
       </script>
 
-      <%= link_to "Back", "#two", { "data-role" => "button", "data-prefetch" => "true", "data-inline" => "true" } %> 
+  
+    
+
+      <label for="select-native-s">Select Vehicle</label>
+        <select name="vehicles" id="vehicles" data-mini="true" data-inline="true">
+          <% @vehicle_array.each do |vehicle| %>
+            <option value= <%= vehicle[:id] %>><%= vehicle[:descr] %></option>
+          <% end %>
+        </select>
+
+      <!--<fieldset data-role="controlgroup" data-inline="true" data-type="horizontal">
+      <legend>Amenities</legend>
+        <% @amenities.each do |amenity| %> 
+          <input type="checkbox" name="amenity[]" id="<%= amenity[:name] %>" value="<%= amenity[:name] %>" data-mini="true"s>
+          <label for="<%= amenity[:name] %>"><%= amenity[:description] %></label>
+        <% end %>
+      </fieldset>-->
+
+       <label for="amenity[]" class="select">Amenities</label>
+        <select name="amenity[]" id="amenity[]" multiple="multiple" data-native-menu="false" data-inline="true">
+          <option>Choose options</option>
+         <% @amenities.each do |amenity| %> 
+         <option value = <%= amenity[:name] %>> <%= amenity[:description] %></option>
+        <% end %>
+      </select>
+
+
+      <%= link_to "Back", reservation_path, { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %>
+
       <%= submit_tag 'search', { "data-inline" => "true" } %>
       <!-- <%= link_to "Next", "#four", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> -->
-    
+
+
     </div>
     <%= render 'layouts/footer' %> 
   </div>

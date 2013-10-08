@@ -67,4 +67,9 @@ class ApplicationController < ActionController::Base
     array[1] = (quarter * 15) % 60
     Time.local(*array) + (quarter == 4 ? 3600 : 0)
   end
+
+  def user_credentials
+    details = { username: cookies.signed[:username],
+                password: cookies.signed[:pwd] }
+  end
 end
