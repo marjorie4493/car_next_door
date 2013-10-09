@@ -6,59 +6,22 @@
 		<%@start_time =  Time.at(@reservation[:start_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
 		<%@end_time =  Time.at(@reservation[:end_time].to_i).strftime("%I:%M %p %d/%m/%Y")%>
 		<p><b>Location: </b><%= @reservation[:location] %></p>
-		<p><b>Current Start Time: </b> <%= @start_time%> </p>
-		<p><b>Current End Time: </b> <%= @end_time%> </p>
+		<p><b>Start Time: </b> <%= @start_time%> </p>
+		<p><b>End Time: </b> <%= @end_time%> </p>
 
-		<%= form_tag reservation_edit_path(:id => @reservation[:id]), method: 'get' do %>
-      <fieldset data-role="controlgroup" data-mini="true">
-        <legend><b>New Start Time:</b></legend>
-      	    <select name="start-date" id="start-date" data-mini="true"> 
-      			<% (@date..(@date + 2.months)).each do |day| %>
-      			<option value= <%= day %>>  
-      				<% if day == Date.current %>
-      					Today 
-      				<% elsif day == Date.current + 1.day %>
-      					Tomorrow
-      				<% else %>
-      					<%= day.strftime("%a %d %B, %Y") %> 
-      				<% end %>
-      			</option>
-      			<% end %>
-      		</select>
+		<%= form_tag reservation_editsubmit_path(:id => @reservation[:id]), method: 'post' do %>
 
-          <%= select_tag "start-time", options_for_select(@times, :selected => time_to_next_quarter_hour(Time.now.strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
-      </fieldset>
+		<label for="start-date">Start time:</label>
+		<%= select_tag "start_date", options_for_select(@date_options, :selected => (Time.at(@reservation[:start_time].to_i)).strftime("%a %d %B, %Y")), { "data-mini" => "true" } %>
+        <%= select_tag "start_time", options_for_select(@times, :selected => (Time.at(@reservation[:start_time].to_i).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+        
+   	    <label for="end-date">End time:</label>
+		<%= select_tag "end_date", options_for_select(@date_options, :selected => (Time.at(@reservation[:end_time].to_i)).strftime("%a %d %B, %Y")), { "data-mini" => "true" } %>
+        <%= select_tag "end_time", options_for_select(@times, :selected => (Time.at(@reservation[:end_time].to_i).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
 
-      </br>
-      <fieldset data-role="controlgroup" data-mini="true">
-        <legend><b>New End Time:</b></legend>
-        <div data-role="controlgroup" data-mini="true">
-     	    <label for="end-date">End time:</label>
-    	    <select name="end-date" id="end-date" data-mini="true"> 
-    			<% (@date..(@date + 2.months)).each do |day| %>
-    			<option value= <%= day %>>  
-    				<% if day == Date.current %>
-    					Today 
-    				<% elsif day == Date.current + 1.day %>
-    					Tomorrow
-    				<% else %>
-    					<%= day.strftime("%a %d %B, %Y") %> 
-    				<% end %>
-    			</option>
-    			<% end %>
-    	    </select>  
-
-          <%= select_tag "end-time", options_for_select(@times, :selected => time_to_next_quarter_hour((Time.now + 15.minutes).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
-          <% end %>
-      </fieldset>
-
-      <br>
-      
-      <div data-role="controlgroup" data-type="horizontal" data-mini="true">
-          <%= link_to "Back", reservation_view_path(:id => @reservation[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true"} %>
-          <%= submit_tag "Submit", class: "form_submit" %>
-      </div>
-
+        <%= submit_tag "Submit", class: "form_submit" %>
+        <%= link_to "Back", reservation_view_path(:id => @reservation[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true"} %>
+		<% end %>
     </div>
     <%= render 'layouts/footer' %>
 </div>

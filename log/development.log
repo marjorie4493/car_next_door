@@ -77800,3 +77800,21 @@ Processing by ReservationsController#new as HTML
   Rendered layouts/_footer.html.erb (1.0ms)
   Rendered reservations/new.html.erb within layouts/application (79.0ms)
 Completed 200 OK in 10061ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/reservation
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered messages/_widget.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered reservations/index.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 16739ms (Views: 681.0ms | ActiveRecord: 0.0ms)
+Processing by ReservationsController#index as HTML
+  Rendered messages/_widget.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered reservations/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 13222ms (Views: 92.0ms | ActiveRecord: 0.0ms)

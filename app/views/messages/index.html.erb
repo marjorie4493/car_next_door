@@ -1,5 +1,36 @@
 <div data-role="page" data-url="<%= request.path %>" data-ajax="false" data-theme="b" data-content-theme="b">
 	<%= render 'layouts/header' %>
+	<div data-role="content">
+
+		<!-- Drop down menu for Critical Messages -->
+		<div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="d">
+	        <h4>Critical Messages</h4>
+	        <ul data-role="listview">
+	          <li><%= link_to "Message 1: New Terms and Conditions", reservation_view_path, { "data-transition" => "slide", "data-ajax" => "false" }  %>
+	          </li>
+	        </ul>
+	    </div>
+
+	    <!-- Drop down menu for Lower Priority Messages -->
+	    <div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="d">
+	        <h4>Messages</h4>
+	        <ul data-role="listview">
+
+	          <li><%= link_to "Message 1: Description ...", reservation_view_path, { "data-transition" => "slide", "data-ajax" => "false" }  %>
+	          </li>
+
+	          <li><%= link_to "Message 2: Description ...", reservation_view_path, { "data-transition" => "slide", "data-ajax" => "false" }  %>
+	          </li>
+
+	        </ul>
+	    </div>
+
+    
+
+
+
+    </div>
 
 	<%= render 'layouts/footer' %> 
 </div>
+

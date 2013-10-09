@@ -14,6 +14,13 @@ class ReservationsController < ApplicationController
     @times = Array.new(24.hours / 15.minutes) do |i|
       (Time.now.midnight + (i*15.minutes)).strftime("%I:%M %p")
     end
+
+    @date = Time.now.to_date
+    @date_options = []
+
+    (@date..(@date + 2.months)).each do |day|  
+      @date_options << day.strftime("%a %d %B, %Y") 
+    end 
   end
 
   def index
@@ -99,15 +106,7 @@ class ReservationsController < ApplicationController
       end_date = @end_time.to_date
       @end_time_string = @end_time.strftime("%I:%M %p %d/%m/%Y")
       
-      # Determines selection options
-      if (@end_time.at_end_of_day - @end_time).to_i / 60 < 15
-        @date = end_date + 1.day
-      else
-        @date = end_date
-      end
-      @times = Array.new(24.hours / 15.minutes) do |i|
-        (Time.now.midnight + (i*15.minutes)).strftime("%I:%M %p")
-      end
+      form_selection_options
     end
   end
   
@@ -129,7 +128,7 @@ class ReservationsController < ApplicationController
   def earlysubmit
     reservation = Reservation.new(user_credentials)
     # End early a reservation using users input
-    end_date = DateTime.strptime(params[:end_date], "%Y-%m-%d")
+    end_date = DateTime.strptime(params[:end_date], "%a %d %B, %Y")
     end_time = DateTime.strptime(params[:end_time], "%I:%M %p")
     date_time = Time.new(end_date.year, end_date.month, end_date.day, end_time.hour, end_time.min).to_i
     Time.zone = reservation.get_time_zone
@@ -148,13 +147,13 @@ class ReservationsController < ApplicationController
     reservation = Reservation.new(user_credentials)
     Time.zone = reservation.get_time_zone
     uid = params[:id]
-    start_date1 = DateTime.strptime(params[:"start-date"], "%Y-%m-%d")
-    start_time1 = DateTime.strptime(params[:"start-time"], "%I:%M %p")
+    start_date1 = DateTime.strptime(params[:start_date], "%a %d %B, %Y")
+    start_time1 = DateTime.strptime(params[:start_time], "%I:%M %p")
     start_date_time = Time.new(start_date1.year, start_date1.month, start_date1.day, start_time1.hour, start_time1.min).to_i
     start_date_time1 = Time.zone.at(start_date_time).to_i
 
-    end_date1 = DateTime.strptime(params[:"end-date"], "%Y-%m-%d")
-    end_time1 = DateTime.strptime(params[:"end-time"], "%I:%M %p")
+    end_date1 = DateTime.strptime(params[:end_date], "%a %d %B, %Y")
+    end_time1 = DateTime.strptime(params[:end_time], "%I:%M %p")
     end_date_time = Time.new(end_date1.year, end_date1.month, end_date1.day, end_time1.hour, end_time1.min).to_i
     end_date_time1 = Time.zone.at(end_date_time).to_i
 
@@ -172,7 +171,7 @@ class ReservationsController < ApplicationController
   def extendsubmit
     reservation = Reservation.new(user_credentials)
     # Extend reservation using users input
-    end_date = DateTime.strptime(params[:end_date], "%Y-%m-%d")
+    end_date = DateTime.strptime(params[:end_date], "%a %d %B, %Y")
     end_time = DateTime.strptime(params[:end_time], "%I:%M %p")
     date_time = Time.new(end_date.year, end_date.month, end_date.day, end_time.hour, end_time.min).to_i
     Time.zone = reservation.get_time_zone
