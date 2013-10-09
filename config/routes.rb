@@ -34,6 +34,8 @@ CarNextDoor::Application.routes.draw do
   match '/cars/parking',        to: 'cars#parking',              via: 'get' 
   match '/cars/schedule',       to: 'cars#schedule',             via: 'get' 
   
+  match '/messages',             to: 'messages#index',            via: 'get'
+  match '/messages/widget',       to: 'messages#widget',           via: 'get'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

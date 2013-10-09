@@ -1,8 +1,20 @@
-/** for links */
-#header_link { text-decoration: none; color: white; text-align: center; width: 10%; margin-left: auto;
+/** for Header links */
+#header_link { text-decoration: none; color: white;  width: 10%; display: block; margin-left: auto;
     margin-right: auto; }
 
 #setting_link {
 	/* :width => "50%", :height => "50%"  */
-	width: 10%; height: 10%;	
+	width: 10%; height: 10%; display: block;
+}
+
+#messages_link {
+	 align: left; margin-left: auto; display: block;
+}
+
+/** for View links */
+
+/** Message View */
+#messages_widget {
+	align: left; margin-left: auto; display: block;
+	float: left; 
 }

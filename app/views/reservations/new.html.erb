@@ -1,8 +1,7 @@
 <%= form_tag('/reservation/search', method: 'post') do %>
-  <div data-role="page" id="one" data-theme="b" data-content-theme="b">
+  <div data-role="page" id="one">
     <%= render 'layouts/header' %>
     <div data-role="content">
-      
       <h1>New Reservation</h1>
       <fieldset data-role="controlgroup" data-type="horizontal">
         <legend>Start time:</legend>
@@ -85,7 +84,7 @@
       </fieldset>-->
 
        <label for="amenity[]" class="select">Amenities</label>
-        <select name="amenity[]" id="amenity[]" multiple="multiple" data-native-menu="false" data-inline="true">
+        <select name="amenity[]" id="amenity[]" multiple="multiple" data-mini="true" data-native-menu="false" data-inline="true">
           <option>Choose options</option>
          <% @amenities.each do |amenity| %> 
          <option value = <%= amenity[:name] %>> <%= amenity[:description] %></option>
@@ -93,9 +92,9 @@
       </select>
 
 
-      <%= link_to "Back", reservation_path, { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %>
+      <%= link_to "Back", reservation_path, { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true", "data-mini"=>"true" } %>
 
-      <%= submit_tag 'Search', { "data-inline" => "true" } %>
+      <%= submit_tag 'search', { "data-inline" => "true", "data-mini"=>"true" } %>
       <!-- <%= link_to "Next", "#four", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> -->
 
 
