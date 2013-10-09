@@ -1,0 +1,11 @@
+<div data-role="page" data-url="<%= request.path %>" data-theme="b" data-content-theme="b">
+	<%= render 'layouts/header' %>
+	
+	<div data-role="content">
+
+		<%= link_to "Back", cars_manage_path(:id => params[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %>
+		<br>
+
+	</div>  
+	<%= render 'layouts/footer' %> 
+</div>

@@ -1,35 +1,35 @@
-<div data-role="page">
-  <%= render 'layouts/header' %>
-  <div data-role="content">
-    <h2>Extend Reservation</h2>
-      <p><%= @reservation[:id] %><br /></p>
-    <p><b>Location: </b><%= @reservation[:location] %><br /></p>
-    <p><%= @reservation[:estimate] %><br /></p>
+<div data-role="page" data-theme="b" data-content-theme="b">
+	<%= render 'layouts/header' %>
+	<div data-role="content">
+		<h2>Extend Reservation</h2>
+		<p><%= @reservation[:id] %><br /></p>
+		<p><b>Location: </b><%= @reservation[:location] %><br /></p>
+		<p><%= @reservation[:estimate] %><br /></p>
 
-      <p><b>Current Start Time: </b><%= @start_time_string %></p>
-    <p><b>Current End Time: </b><%= @end_time_string %></p>
+		<p><b>Current Start Time: </b><%= @start_time_string %></p>
+		<p><b>Current End Time: </b><%= @end_time_string %></p>
     
-    <%= form_tag reservation_extend_path(:id => @reservation[:id]), method: 'get' do %>
-      <label for="end-date"><b>New End time: </b></label> 
-    <select name="end_date" id="end_date" data-mini="true">  
-      <% (@date..(@date + 2.months)).each do |day| %> 
-      <option value= <%= day %>>  
-        <% if day == Date.current %> 
-          Today  
-        <% elsif day == Date.current + 1.day %> 
-          Tomorrow 
-        <% else %> 
-          <%= day.strftime("%a %d %B, %Y") %>   
-        <% end %>
-      </option> 
-    <% end %> 
-    </select> 
-    <%= select_tag "end_time", options_for_select(@times, :selected => (@end_time + 15.minutes).strftime("%I:%M %p")), { "data-mini" => "true" } %>  
-    <%= submit_tag "Extend", class: "form_submit" %>
-    <% end %>
-    <%= link_to "Back", reservation_view_path(:id => @reservation[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true" } %>
-    <%= @result %>
-    <br>
-  </div>
-  <%= render 'layouts/footer' %>
+		<%= form_tag reservation_extendsubmit_path(:id => @reservation[:id]), method: 'post' do %>
+		<label for="end-date"><b>New End time: </b></label> 
+		<select name="end_date" id="end_date" data-mini="true">  
+			<% (@date..(@date + 2.months)).each do |day| %> 
+			<option value= <%= day %>>  
+				<% if day == Date.current %> 
+				  Today  
+				<% elsif day == Date.current + 1.day %> 
+				  Tomorrow 
+				<% else %> 
+				  <%= day.strftime("%a %d %B, %Y") %>   
+				<% end %>
+			</option> 
+			<% end %> 
+		</select> 
+		
+		<%= select_tag "end_time", options_for_select(@times, :selected => (@end_time + 15.minutes).strftime("%I:%M %p")), { "data-mini" => "true" } %>  
+		<%= submit_tag "Extend", class: "form_submit" %>
+		<% end %>
+		<%= link_to "Back", reservation_view_path(:id => @reservation[:id]), { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true" } %>
+		<br>
+    </div>
+    <%= render 'layouts/footer' %>
 </div>

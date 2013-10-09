@@ -1,7 +1,9 @@
-<div data-role="page" data-url="<%= request.path %>">
-  <%= render 'layouts/header' %>
-  <div data-role="content">
-    <p> Your reservation id: </p> <%= @reservation[:id] %> <p> has been cancelled. </p>     
-  </div>
-  <%= render 'layouts/footer' %> 
+<div data-role="page" data-url="<%= request.path %>" data-theme="b" data-content-theme="b" >
+    <%= render 'layouts/header' %>
+	
+    <div data-role="content">
+		<p> Your reservation id: <%= params[:id] %> has been cancelled. </p>     
+    </div>
+	
+    <%= render 'layouts/footer' %> 
 </div>

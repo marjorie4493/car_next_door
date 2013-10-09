@@ -1,33 +1,33 @@
- <div data-role="page" data-url="<%= request.path %>" data-ajax="false" data-theme="a" data-content-theme="a">
-  <%= render 'layouts/header' %>
-  <div data-role="content">
-  
-  <% random = randomise %><br><br><br>
-  <table border="0" align="center">
-    <tr>
-	  <td>
-        <%= image_tag "logo.png", :width => "100%" %> 
-      </td>
-	  <td>
-        <%= image_tag "face" + (random[0].to_s) +".png", :width => "100%" %> 
-      </td>
-	  <td>
-        <%= image_tag "face" + (random[1].to_s) +".png", :width => "100%" %> 
-      </td>
-	  <td>
-        <%= image_tag "face" + (random[2].to_s) +".png" , :width => "100%" %> 
-      </td>
-	</tr>
-  </table>
+<div data-role="page" data-url="<%= request.path %>" data-ajax="false" data-theme="a" data-content-theme="a">
+	<%= render 'layouts/header' %>
+	<div data-role="content">
+		<% random = randomise %>
+		<br><br><br>
+		<table border="0" align="center">
+			<tr>
+			  <td>
+				<%= image_tag "logo.png", :width => "100%" %> 
+			  </td>
+			  <td>
+				<%= image_tag "face" + (random[0].to_s) +".png", :width => "100%" %> 
+			  </td>
+			  <td>
+				<%= image_tag "face" + (random[1].to_s) +".png", :width => "100%" %> 
+			  </td>
+			  <td>
+				<%= image_tag "face" + (random[2].to_s) +".png" , :width => "100%" %> 
+			  </td>
+			</tr>
+		</table>
 
-    <%= form_for(:session, url: sessions_path) do |f| %>
-    	<%= f.text_field :username, placeholder: "Member ID"%>
-    	<%= f.password_field :password, placeholder: "Password"%>
-    	<%=  f.submit "LOGIN", "data-content-theme" => "a" %>
-    <% end %>
-    <br>
-    <div class="centerLink">
-      <%= link_to "Contact Us", contact_path, { "data-content-theme" => "a", "data-theme" => "a"} %>
-    </div>
-  </div>
+		<%= form_for(:session, url: sessions_path) do |f| %>
+			<%= f.text_field :username, placeholder: "Member ID"%>
+			<%= f.password_field :password, placeholder: "Password"%>
+			<%=  f.submit "LOGIN", "data-content-theme" => "a" %>
+		<% end %>
+		<br>
+		<div class="centerLink">
+			<%= link_to "Contact Us", contact_path, { "data-content-theme" => "a", "data-theme" => "a"} %>
+		</div>
+	</div>
 </div>

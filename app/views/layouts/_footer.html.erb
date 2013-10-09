@@ -1,16 +1,16 @@
 <% if !cookies[:username].nil? %>
-  <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="b" data-content-theme="b">
-    <div data-role="navbar" data-content-theme="b" data-theme="b">
-      <ul>
-        <li><%= link_to "My Reservations", reservation_path, { "data-icon" => "home" , "data-ajax" => "false", "data-content-theme" => "b" , "data-theme" => "b"} %></li>
-        <li><%= link_to "Reserve", new_path, { "data-icon" => "arrow-r", "data-ajax" => "false", "class" => "new-reservation", "data-content-theme" => "b" , "data-theme" => "b"} %></li>
-		
-		    <% if cookies.signed[:username] == "970" %>
-		      <li><%= link_to "My Cars", cars_path, { "data-icon" => "star" ,"data-ajax" => "false", "data-content-theme" => "b", "data-theme" => "b"} %></li>
-		    <% end %>
-        <li><%= link_to "Profile", profile_path, { "data-icon" => "gear" ,"data-ajax" => "false", "data-content-theme" => "b", "data-theme" => "b"} %></li>		
-		
-      </ul>
-    </div><!-- /navbar -->
-  </div><!-- /footer -->
+	<div data-role="footer" data-id="foo1" data-position="fixed" data-theme="b" data-content-theme="b">
+		<div data-role="navbar" data-content-theme="b" data-theme="b">
+			<ul>
+				<li><%= link_to "My Reservations", reservation_path, { "data-icon" => "home" , "data-ajax" => "false", "data-content-theme" => "b" , "data-theme" => "b"} %></li>
+				<li><%= link_to "Reserve", new_path, { "data-icon" => "arrow-r", "data-ajax" => "false", "class" => "new-reservation", "data-content-theme" => "b" , "data-theme" => "b"} %></li>
+			
+				<% if cookies.signed[:username] == "970" %>
+				  <li><%= link_to "My Cars", cars_path, { "data-icon" => "star" ,"data-ajax" => "false", "data-content-theme" => "b", "data-theme" => "b"} %></li>
+				<% end %>
+				
+				<li><%= link_to "Profile", profile_path, { "data-icon" => "gear" ,"data-ajax" => "false", "data-content-theme" => "b", "data-theme" => "b"} %></li>		
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 <% end %>

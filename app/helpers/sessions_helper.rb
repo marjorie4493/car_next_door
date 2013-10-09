@@ -1,5 +1,6 @@
 module SessionsHelper
 
+  # determines 3 random numbers for image selection
   def randomise
     random = []
   

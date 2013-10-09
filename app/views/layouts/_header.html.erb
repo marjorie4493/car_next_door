@@ -1,12 +1,17 @@
 <% if !cookies.signed[:username].nil? && !cookies.signed[:pwd].nil? %>
-<div data-role="panel" data-position="left" data-display="overlay" id="mypanel" data-ajax="false">
-         <%= link_to "Contact Us", contact_path, { "data-role" => "button", "data-content-theme"=>"c" } %>
-      <%= link_to "Sign out", signout_path, { :method => "delete", "data-role" => "button", "data-content-theme"=>"c", "data-ajax" => "false" } %>
-</div><!-- /panel -->
-  <div data-role="header" data-content-theme="c" data-theme="c">
-    <p style="text-align: center;">CAR NEXT DOOR</p>
-    <% if !cookies.signed[:username].nil? and !cookies.signed[:pwd].nil? %>
-      <%= link_to image_tag('gears.png', :width => "50%", :height => "50%"), "#mypanel", {  "data-content-theme"=>"c", "style" => "border-width:0;", "class" => "ui-btn-right" } %>
-    <% end %>
-  </div>
+	<div data-role="panel" data-position="left" data-display="overlay" id="mypanel" data-ajax="false">
+		<%= link_to "Contact Us", contact_path, { "data-role" => "button", "data-content-theme"=>"c" } %>
+		<%= link_to "Sign out", signout_path, { :method => "delete", "data-role" => "button", "data-content-theme"=>"c", "data-ajax" => "false" } %>
+	</div><!-- /panel -->
+
+	<div data-role="header" data-content-theme="c" data-theme="c">
+		<div id = "header_link"><%= link_to "CAR NEXT DOOR", reservation_path, { "data-role" => "button", "data-content-theme"=>"c", "data-ajax" => "false" } %>
+		</div>
+
+		<% if !cookies.signed[:username].nil? and !cookies.signed[:pwd].nil? %>
+			<div id = setting_link>
+				<%= link_to image_tag('gears.png'), "#mypanel", {  "data-content-theme"=>"c", "style" => "border-width:0;", "class" => "ui-btn-right" } %>
+			</div>
+		<% end %>
+	</div>
 <% end %>

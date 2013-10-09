@@ -1,0 +1,51 @@
+<div data-role="page" data-url="<%= request.path %>" data-theme="b" data-content-theme="b">
+	<%= render 'layouts/header' %>
+	
+	<div data-role="content">
+		<%= image_tag(@car[:image])%>
+		<br>
+	
+		<p><b>Vehicle Type: </b><%= @car_info[:remark] %></p>
+     	<p><b>Year: </b><%= @car_info[:year] %></p>
+		<p><b>Plate: </b><%= @car_info[:plate] %></p>
+	  
+		<%= form_tag('/book', method: 'post') %>
+		<label for="start-date">Start time:</label>
+		<select name="start_date" id="start-date" data-mini="true"> 
+			<% (@date..(@date + 2.months)).each do |day| %>
+			<option value= <%= day %>>  
+				<% if day == Date.current %>
+					Today 
+				<% elsif day == Date.current + 1.day %>
+					Tomorrow
+				<% else %>
+				<%= day.strftime("%a %d %B, %Y") %> 
+				<% end %>
+			</option>
+			<% end %>
+		</select>
+
+		<%= select_tag "start_time", options_for_select(@times, :selected => time_to_next_quarter_hour(@time.at(Time.now).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+      
+		<label for="end-date">End time:</label>
+		<select name="end_date" id="end-date" data-mini="true"> 
+			<% (@date..(@date + 2.months)).each do |day| %>
+			<option value= <%= day %>>  
+				<% if day == Date.current %>
+					Today 
+				<% elsif day == Date.current + 1.day %>
+					Tomorrow
+				<% else %>
+					<%= day.strftime("%a %d %B, %Y") %> 
+				<% end %>
+			</option>
+			<% end %>
+		</select>
+			  
+		<%= select_tag "end_time", options_for_select(@times, :selected => time_to_next_quarter_hour((@time.at(Time.now + 1.hour)).strftime("%I:%M %p"))), { "data-mini" => "true" } %> 
+
+		<%= submit_tag 'Book' %>
+	
+	</div>  
+	<%= render 'layouts/footer' %> 
+</div>

@@ -163,10 +163,11 @@ def initialize(user_details)
   def get_driver_messages
     method = "getDriverMessages"
     hash = post_request(method)
-=begin
-    message_list = hash["DBEntityMessage"][0]
+
+    
     messages = []
-    if !message_list.nil?
+    if !hash["DBEntityMessage"].nil?
+      message_list = hash["DBEntityMessage"][0]
       message_list.each { |x|
         messages.push( {  :descr             => x["descr"][0],
                           :text              => x["text"][0],
@@ -183,7 +184,6 @@ def initialize(user_details)
                           } ) }
     end
     messages
-=end
   end
   
   # Get locale of driver.

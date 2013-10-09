@@ -1,23 +1,22 @@
 <div data-role="page" data-theme="b" data-content-theme="b">
-  <%= render 'layouts/header' %>
-  <div data-role="content">
-    <%= @start_date %>
-    <%= @start_time %>
-    <%= @end_date %>
-    <%= @end_time %>
-    <%= @vehicles %>
-    <%= @amenities %>
-    <%= @start_date_time %>
-    <%= @check_avail %>
-    <p> Make reservation:</p>
-    <%= @res %>
-    <%= form_tag('/book', method: 'post') %>
-      <%= hidden_field_tag 'start_date',  @start_date %>
-	  <%= hidden_field_tag 'start_time',  @start_time %>
-      <%= hidden_field_tag 'end_date',  @end_date %>
-	  <%= hidden_field_tag 'end_time',  @end_time %>
-    <%= submit_tag 'Book' %>
-
-  </div>
-  <%= render 'layouts/footer' %>
+	<%= render 'layouts/header' %>
+	<div data-role="content">
+		<%= @start_date %>
+		<%= @start_time %>
+		<%= @end_date %>
+		<%= @end_time %>
+		<%= @vehicles %>
+		<%= @amenities %>
+		<%= @start_date_time %>
+		<%= @check_avail %>
+		<p> Make reservation:</p>
+		<%= @res %>
+		<%= form_tag('/book', method: 'post') %>
+		  <%= hidden_field_tag 'start_date',  @start_date %>
+		  <%= hidden_field_tag 'start_time',  @start_time %>
+		  <%= hidden_field_tag 'end_date',  @end_date %>
+		  <%= hidden_field_tag 'end_time',  @end_time %>
+		<%= submit_tag 'Book' %>
+	</div>
+	<%= render 'layouts/footer' %>
 </div>

@@ -2,6 +2,7 @@
   <div data-role="page" id="one" data-theme="b" data-content-theme="b">
     <%= render 'layouts/header' %>
     <div data-role="content">
+      
       <h1>New Reservation</h1>
       <fieldset data-role="controlgroup" data-type="horizontal">
         <legend>Start time:</legend>
@@ -94,7 +95,7 @@
 
       <%= link_to "Back", reservation_path, { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %>
 
-      <%= submit_tag 'search', { "data-inline" => "true" } %>
+      <%= submit_tag 'Search', { "data-inline" => "true" } %>
       <!-- <%= link_to "Next", "#four", { "data-role" => "button", "data-transition" => "slide", "data-prefetch" => "true", "data-inline" => "true" } %> -->
 
 

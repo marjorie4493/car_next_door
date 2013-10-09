@@ -10,6 +10,11 @@ CarNextDoor::Application.routes.draw do
   root 'sessions#new'
   match '/book',                to: 'reservations#book',         via: 'post'
   match '/reservation/cancel',  to: 'reservations#cancel',       via: 'post'
+
+  match '/reservation/editsubmit',   to: 'reservations#editsubmit',    via: 'post'
+  match '/reservation/extendsubmit', to: 'reservations#extendsubmit',  via: 'post'
+  match '/reservation/earlysubmit',  to: 'reservations#earlysubmit',   via: 'post'
+
   match '/reservation',         to: 'reservations#index',        via: 'get'
   match '/reservation/edit',    to: 'reservations#edit',         via: 'get'
   match '/reservation/search',  to: 'reservations#search',       via: 'post'
@@ -21,7 +26,13 @@ CarNextDoor::Application.routes.draw do
   match '/reservation/extend',  to: 'reservations#extend',       via: 'get'
   match '/reservation/early',   to: 'reservations#early',        via: 'get'
   match '/reservation/confirm', to: 'reservations#confirm',      via: 'get' 
-  match '/cars',                to: 'cars#index',                via: 'get' 
+  match '/cars',                to: 'cars#index',                via: 'get'
+  match '/cars/reserve',        to: 'cars#reserve',              via: 'get'
+  match '/cars/manage',         to: 'cars#manage',               via: 'get' 
+  match '/cars/details',        to: 'cars#details',              via: 'get' 
+  match '/cars/rates',          to: 'cars#rates',                via: 'get' 
+  match '/cars/parking',        to: 'cars#parking',              via: 'get' 
+  match '/cars/schedule',       to: 'cars#schedule',             via: 'get' 
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

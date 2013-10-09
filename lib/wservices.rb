@@ -6,7 +6,16 @@ module Wservices
   # Returns a list of available times for availability for the specified stack.
   def availability_for_stack(stack_id, start_time, end_time)
     method = "availabilityForStack&stackId=" + stack_id.to_s + "&startTime=" + start_time.to_s + "&endTime=" + end_time.to_s
-    post_request(method)
+    hash = post_request(method)
+    avail = hash["DBTimeSlot"]
+    avail_array = []
+
+    if(!avail.nil?)
+      avail.each { |x|
+        avail_array.push ( { :time      => x["time"][0],
+                             :available => x["available"][0] } ) }
+    end
+    avail_array
   end
 
   # Returns the divisor in minutes that a reservation start and end time must # fall on. Start and End time must be divisible by this number.
@@ -470,7 +479,8 @@ module Wservices
   # Returns an array of messages for the logged in driver.
   def get_driver_messages
     method = "getDriverMessages"
-    post_request(method)
+    hash = post_request(method)
+    
   end
 
   # Returns the drivers reservations and messages.

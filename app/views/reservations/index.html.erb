@@ -1,45 +1,47 @@
 <div data-role="page" data-url="<%= request.path %>" data-ajax="false" data-theme="b" data-content-theme="b">
 
-  <%= render 'layouts/header' %>
-  <div data-role="content">
-    <% if !@current.nil? %>
-      <div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="a">
-        <h4>Current Reservation</h4>
-        <ul data-role="listview">
-          <li><%= link_to @current[:vehicle_id] + " - " + @current[:start_time].strftime("%R %d/%m/%Y") + " - " + @current[:end_time].strftime("%R %d/%m/%Y"), reservation_view_path(:id => @current[:id]), { "data-transition" => "slide", "data-ajax" => "false" }  %>
-          </li>
-        </ul>
-      </div>
-    <% else %>
-      <p>You have no current reservation.</p>
-    <% end %>
+    <%= render 'layouts/header' %>
+    <div data-role="content">
+		<% if !@current.nil? %>
+			<div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="a">
+				<h4>Current Reservation</h4>
+				<ul data-role="listview">
+					<li><%= link_to @current[:vehicle_id] + " - " + @current[:start_time].strftime("%R %d/%m/%Y") + " - " + @current[:end_time].strftime("%R %d/%m/%Y"), reservation_view_path(:id => @current[:id]), { "data-transition" => "slide", "data-ajax" => "false" }  %>
+					</li>
+				</ul>
+			</div>
+		<% else %>
+			<p>You have no current reservation.</p>
+		<% end %>
 
-    <% if !@future.nil? %>
-      <div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="a">
-        <h4>Future Reservations (<%= @future.length%>)</h4>
-        <ul data-role="listview">
-        <% @future.each do |future| %>
-          <li><%= link_to future[:vehicle_id] + " - " + " " + future[:start_time].strftime("%R %d/%m/%Y") + " to " + future[:end_time].strftime("%R %d/%m/%Y"), reservation_view_path(:id => future[:id]), { "data-transition" => "slide", "data-ajax" => "false" } %>
-          </li>
-        <% end %>
-        </ul>
-    </div>
-    <% else %>
-      <p>You have no future reservations.</p>
-    <% end %>   
-    <% if !@past.nil? %>
-      <div data-role="collapsible" data-collapsed="true" data-theme="d" data-content-theme="d">
-        <h4>Past Reservations (<%= @past.length%>)</h4>
-        <ul data-role="listview">
-       <% @past.reverse_each do |past| %>
-            <li><%= link_to past[:vehicle_id] + " - " + " " + past[:start_time].strftime("%R %d/%m/%Y") + " to " + past[:end_time].strftime("%R %d/%m/%Y")+", "+past[:estimate]+", "+past[:status], reservation_view_path(:id => past[:id]), { "data-transition" => "slide", "data-ajax" => "false" } %>
-            </li>
-        <% end %>
-        </ul>
-    </div>
-    <% else %>
-      <p>You have no past reservations.</p>
-    <% end %>     
+		<% if !@future.nil? %>
+			<div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="a">
+				<h4>Future Reservations (<%= @future.length%>)</h4>
+				<ul data-role="listview">
+				<% @future.each do |future| %>
+					<li><%= link_to future[:vehicle_id] + " - " + " " + future[:start_time].strftime("%R %d/%m/%Y") + " to " + future[:end_time].strftime("%R %d/%m/%Y"), reservation_view_path(:id => future[:id]), { "data-transition" => "slide", "data-ajax" => "false" } %>
+					</li>
+					<% end %>
+				</ul>
+			</div>
+		<% else %>
+			<p>You have no future reservations.</p>
+		<% end %>   
+		
+		<% if !@past.nil? %>
+		<div data-role="collapsible" data-collapsed="true" data-theme="d" data-content-theme="d">
+			<h4>Past Reservations (<%= @past.length%>)</h4>
+			<ul data-role="listview">
+				<% @past.reverse_each do |past| %>
+				<li><%= link_to past[:vehicle_id] + " - " + " " + past[:start_time].strftime("%R %d/%m/%Y") + " to " + past[:end_time].strftime("%R %d/%m/%Y")+", "+past[:estimate]+", "+past[:status], reservation_view_path(:id => past[:id]), { "data-transition" => "slide", "data-ajax" => "false" } %>
+				</li>
+				<% end %>
+			</ul>
+		</div>
+		
+		<% else %>
+			<p>You have no past reservations.</p>
+		<% end %>     
   </div>
   <%= render 'layouts/footer' %> 
-  </div>
+</div>
